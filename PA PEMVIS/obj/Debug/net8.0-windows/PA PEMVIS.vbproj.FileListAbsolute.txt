@@ -1,0 +1,20 @@
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\bin\Debug\net8.0-windows\PA PEMVIS.exe
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\bin\Debug\net8.0-windows\PA PEMVIS.deps.json
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\bin\Debug\net8.0-windows\PA PEMVIS.runtimeconfig.json
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\bin\Debug\net8.0-windows\PA PEMVIS.dll
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\bin\Debug\net8.0-windows\PA PEMVIS.pdb
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA_PEMVIS.Resources.resources
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA PEMVIS.vbproj.GenerateResource.cache
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA PEMVIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA PEMVIS.AssemblyInfoInputs.cache
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA PEMVIS.AssemblyInfo.vb
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA PEMVIS.vbproj.CoreCompileInputs.cache
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA PEMVIS.dll
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\refint\PA PEMVIS.dll
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA PEMVIS.pdb
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA PEMVIS.genruntimeconfig.cache
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\ref\PA PEMVIS.dll
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA_PEMVIS.Daftar.resources
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA_PEMVIS.LandingPage.resources
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA_PEMVIS.HomeAdmin.resources
+D:\Tugas Kuliah\PEMVIS\PA PEMVIS\PA PEMVIS\obj\Debug\net8.0-windows\PA_PEMVIS.Login.resources
