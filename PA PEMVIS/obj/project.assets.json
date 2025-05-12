@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\PA PEMVIS (2)\\PA PEMVIS\\PA PEMVIS\\PA PEMVIS.vbproj",
+      "projectUniqueName": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\PA PEMVIS.vbproj",
       "projectName": "PA PEMVIS",
-      "projectPath": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\PA PEMVIS (2)\\PA PEMVIS\\PA PEMVIS\\PA PEMVIS.vbproj",
+      "projectPath": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\PA PEMVIS.vbproj",
       "packagesPath": "C:\\Users\\Asus TUF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\PA PEMVIS (2)\\PA PEMVIS\\PA PEMVIS\\obj\\",
+      "outputPath": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
