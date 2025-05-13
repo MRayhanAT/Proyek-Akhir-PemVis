@@ -1,3 +1,4 @@
+Imports System.Text
 Imports MySql.Data.MySqlClient
 
 Public Module Module1
@@ -9,6 +10,7 @@ Public Module Module1
     Public DS As DataSet
     Public STR As String
     Sub koneksi()
+        System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance)
         Try
             Dim STR As String =
             "server=localhost;userid=root;password=;database=ProyekAkhirPemVis"
