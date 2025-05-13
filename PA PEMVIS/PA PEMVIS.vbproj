@@ -16,6 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\Latihan\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="My Project\Application.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

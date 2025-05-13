@@ -25,7 +25,7 @@ Partial Class Login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Label1 = New Label()
         Button1 = New Button()
-        BtnDaftar = New Button()
+        BtnLogin = New Button()
         txtUsername = New TextBox()
         txtPassword = New TextBox()
         Label2 = New Label()
@@ -36,11 +36,11 @@ Partial Class Login
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Swis721 BlkCn BT", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(629, 518)
+        Label1.Location = New Point(719, 609)
         Label1.Name = "Label1"
-        Label1.Size = New Size(124, 35)
+        Label1.Size = New Size(172, 42)
         Label1.TabIndex = 14
         Label1.Text = "SihCepat"
         ' 
@@ -52,58 +52,62 @@ Partial Class Login
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = Color.Transparent
-        Button1.Location = New Point(10, 7)
+        Button1.Location = New Point(11, 8)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(49, 49)
+        Button1.Size = New Size(56, 58)
         Button1.TabIndex = 13
         Button1.UseVisualStyleBackColor = False
         ' 
-        ' BtnDaftar
+        ' BtnLogin
         ' 
-        BtnDaftar.BackColor = Color.DarkGoldenrod
-        BtnDaftar.FlatAppearance.BorderSize = 0
-        BtnDaftar.FlatAppearance.MouseOverBackColor = Color.Goldenrod
-        BtnDaftar.FlatStyle = FlatStyle.Flat
-        BtnDaftar.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BtnDaftar.ForeColor = Color.White
-        BtnDaftar.Location = New Point(328, 338)
-        BtnDaftar.Name = "BtnDaftar"
-        BtnDaftar.Size = New Size(320, 40)
-        BtnDaftar.TabIndex = 17
-        BtnDaftar.Text = "Daftar"
-        BtnDaftar.UseVisualStyleBackColor = False
+        BtnLogin.BackColor = Color.DarkGoldenrod
+        BtnLogin.FlatAppearance.BorderSize = 0
+        BtnLogin.FlatAppearance.MouseOverBackColor = Color.Goldenrod
+        BtnLogin.FlatStyle = FlatStyle.Flat
+        BtnLogin.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnLogin.ForeColor = Color.White
+        BtnLogin.Location = New Point(375, 398)
+        BtnLogin.Margin = New Padding(3, 4, 3, 4)
+        BtnLogin.Name = "BtnLogin"
+        BtnLogin.Size = New Size(366, 47)
+        BtnLogin.TabIndex = 17
+        BtnLogin.Text = "Login"
+        BtnLogin.UseVisualStyleBackColor = False
         ' 
         ' txtUsername
         ' 
         txtUsername.Cursor = Cursors.IBeam
-        txtUsername.Font = New Font("Swis721 Cn BT", 12.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtUsername.Font = New Font("Microsoft Sans Serif", 12.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtUsername.ForeColor = Color.DarkGray
-        txtUsername.Location = New Point(328, 212)
+        txtUsername.Location = New Point(375, 249)
+        txtUsername.Margin = New Padding(3, 4, 3, 4)
         txtUsername.Multiline = True
         txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(320, 32)
+        txtUsername.Size = New Size(365, 37)
         txtUsername.TabIndex = 16
         ' 
         ' txtPassword
         ' 
         txtPassword.Cursor = Cursors.IBeam
-        txtPassword.Font = New Font("Swis721 Cn BT", 12.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtPassword.Font = New Font("Microsoft Sans Serif", 12.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtPassword.ForeColor = Color.DarkGray
-        txtPassword.Location = New Point(328, 285)
+        txtPassword.Location = New Point(375, 335)
+        txtPassword.Margin = New Padding(3, 4, 3, 4)
         txtPassword.Multiline = True
         txtPassword.Name = "txtPassword"
-        txtPassword.Size = New Size(320, 32)
+        txtPassword.Size = New Size(365, 37)
         txtPassword.TabIndex = 15
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.SaddleBrown
-        Label2.Location = New Point(328, 184)
+        Label2.Location = New Point(375, 216)
         Label2.Name = "Label2"
-        Label2.Size = New Size(85, 22)
+        Label2.Size = New Size(132, 29)
         Label2.TabIndex = 18
         Label2.Text = "Username"
         ' 
@@ -111,29 +115,30 @@ Partial Class Login
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.SaddleBrown
-        Label3.Location = New Point(328, 257)
+        Label3.Location = New Point(375, 302)
         Label3.Name = "Label3"
-        Label3.Size = New Size(81, 22)
+        Label3.Size = New Size(128, 29)
         Label3.TabIndex = 19
         Label3.Text = "Password"
         ' 
         ' Login
         ' 
-        AutoScaleDimensions = New SizeF(7F, 17F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Zoom
-        ClientSize = New Size(763, 560)
+        ClientSize = New Size(872, 659)
         Controls.Add(Label3)
         Controls.Add(Label2)
-        Controls.Add(BtnDaftar)
+        Controls.Add(BtnLogin)
         Controls.Add(txtUsername)
         Controls.Add(txtPassword)
         Controls.Add(Label1)
         Controls.Add(Button1)
         DoubleBuffered = True
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Login"
         Text = "Login"
         ResumeLayout(False)
@@ -142,7 +147,7 @@ Partial Class Login
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents BtnDaftar As Button
+    Friend WithEvents BtnLogin As Button
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents Label2 As Label

@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("PA PEMVIS"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+836e5cbd186768e7eed3c33c6ca176726b2a9262"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c23bb0d4719a40f3527b04f7b0bb5f8977e25579"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("PA PEMVIS"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("PA PEMVIS"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
