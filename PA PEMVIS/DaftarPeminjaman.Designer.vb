@@ -25,7 +25,8 @@ Partial Class DaftarPeminjaman
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DaftarPeminjaman))
         BtnKembali = New Button()
         Label1 = New Label()
-        LVPeminjaman = New ListView()
+        DataGridView1 = New DataGridView()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' BtnKembali
@@ -36,9 +37,10 @@ Partial Class DaftarPeminjaman
         BtnKembali.FlatAppearance.BorderSize = 0
         BtnKembali.FlatStyle = FlatStyle.Flat
         BtnKembali.ForeColor = Color.Transparent
-        BtnKembali.Location = New Point(8, 7)
+        BtnKembali.Location = New Point(9, 8)
+        BtnKembali.Margin = New Padding(3, 4, 3, 4)
         BtnKembali.Name = "BtnKembali"
-        BtnKembali.Size = New Size(49, 49)
+        BtnKembali.Size = New Size(56, 58)
         BtnKembali.TabIndex = 17
         BtnKembali.UseVisualStyleBackColor = False
         ' 
@@ -46,41 +48,44 @@ Partial Class DaftarPeminjaman
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Swis721 Hv BT", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.SaddleBrown
-        Label1.Location = New Point(212, 17)
+        Label1.Location = New Point(242, 20)
         Label1.Name = "Label1"
-        Label1.Size = New Size(323, 39)
+        Label1.Size = New Size(361, 46)
         Label1.TabIndex = 16
         Label1.Text = "Daftar Peminjaman"
         ' 
-        ' LVPeminjaman
+        ' DataGridView1
         ' 
-        LVPeminjaman.Location = New Point(16, 72)
-        LVPeminjaman.Name = "LVPeminjaman"
-        LVPeminjaman.Size = New Size(730, 309)
-        LVPeminjaman.TabIndex = 15
-        LVPeminjaman.UseCompatibleStateImageBehavior = False
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(9, 73)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.RowHeadersWidth = 51
+        DataGridView1.Size = New Size(851, 446)
+        DataGridView1.TabIndex = 18
         ' 
         ' DaftarPeminjaman
         ' 
-        AutoScaleDimensions = New SizeF(7F, 17F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Zoom
-        ClientSize = New Size(763, 560)
+        ClientSize = New Size(872, 659)
+        Controls.Add(DataGridView1)
         Controls.Add(BtnKembali)
         Controls.Add(Label1)
-        Controls.Add(LVPeminjaman)
         DoubleBuffered = True
         ForeColor = Color.SaddleBrown
+        Margin = New Padding(3, 4, 3, 4)
         Name = "DaftarPeminjaman"
         Text = "DaftarPeminjaman"
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents BtnKembali As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents LVPeminjaman As ListView
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

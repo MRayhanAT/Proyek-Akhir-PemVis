@@ -35,7 +35,7 @@ Public Class DaftarUser
 
             Module1.koneksi()
             Dim query As String = "SELECT * FROM tbUsers"
-            Dim cmd As New MySqlCommand(query, CONN)
+            Dim cmd As New MySqlCommand(query, Module1.CONN)
             Dim reader As MySqlDataReader = cmd.ExecuteReader()
 
             While reader.Read()
@@ -96,5 +96,4 @@ Public Class DaftarUser
         HomeAdmin.Show()
         Me.Hide()
     End Sub
-
 End Class

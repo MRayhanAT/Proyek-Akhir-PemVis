@@ -74,7 +74,7 @@ Public Class DaftarPeminjaman
                 Dim statusBaru As String = row.Cells("Status").Value.ToString()
 
                 Dim query As String = "UPDATE Pinjaman SET Status = @status WHERE idPinjaman = @id"
-                Dim cmd As New MySqlCommand(query, CONN)
+                Dim cmd As New MySqlCommand(query, Module1.CONN)
                 cmd.Parameters.AddWithValue("@status", statusBaru)
                 cmd.Parameters.AddWithValue("@id", idPinjaman)
                 cmd.ExecuteNonQuery()
@@ -82,8 +82,8 @@ Public Class DaftarPeminjaman
             Catch ex As Exception
                 MessageBox.Show("Gagal mengupdate status: " & ex.Message)
             Finally
-                If CONN.State = ConnectionState.Open Then
-                    CONN.Close()
+                If Module1.CONN.State = ConnectionState.Open Then
+                    Module1.CONN.Close()
                 End If
             End Try
         End If

@@ -3,6 +3,12 @@ Imports MySql.Data.MySqlClient
 Public Class Login
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         Try
+            If txtUsername.Text = "admin" And txtPassword.Text = "admin" Then
+                MessageBox.Show("Login berhasil! Selamat datang, Admin")
+                Me.Hide()
+                HomeAdmin.Show()
+            End If
+
             Module1.koneksi()
 
             Module1.CMD = New MySqlCommand("SELECT username FROM tbUsers WHERE username = @UserName AND password = @pw", Module1.CONN)

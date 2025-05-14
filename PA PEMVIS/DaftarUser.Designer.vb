@@ -23,64 +23,68 @@ Partial Class DaftarUser
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DaftarUser))
-        ListView1 = New ListView()
         Label1 = New Label()
-        Button1 = New Button()
+        BtnKembali = New Button()
+        DataGridView1 = New DataGridView()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' ListView1
-        ' 
-        ListView1.Location = New Point(21, 73)
-        ListView1.Name = "ListView1"
-        ListView1.Size = New Size(730, 309)
-        ListView1.TabIndex = 0
-        ListView1.UseCompatibleStateImageBehavior = False
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Swis721 Hv BT", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.SaddleBrown
-        Label1.Location = New Point(280, 21)
+        Label1.Location = New Point(320, 25)
         Label1.Name = "Label1"
-        Label1.Size = New Size(201, 39)
+        Label1.Size = New Size(223, 46)
         Label1.TabIndex = 1
         Label1.Text = "Daftar User"
         ' 
-        ' Button1
+        ' BtnKembali
         ' 
-        Button1.BackColor = Color.Transparent
-        Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
-        Button1.BackgroundImageLayout = ImageLayout.Zoom
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.ForeColor = Color.Transparent
-        Button1.Location = New Point(13, 8)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(49, 49)
-        Button1.TabIndex = 14
-        Button1.UseVisualStyleBackColor = False
+        BtnKembali.BackColor = Color.Transparent
+        BtnKembali.BackgroundImage = CType(resources.GetObject("BtnKembali.BackgroundImage"), Image)
+        BtnKembali.BackgroundImageLayout = ImageLayout.Zoom
+        BtnKembali.FlatAppearance.BorderSize = 0
+        BtnKembali.FlatStyle = FlatStyle.Flat
+        BtnKembali.ForeColor = Color.Transparent
+        BtnKembali.Location = New Point(15, 9)
+        BtnKembali.Margin = New Padding(3, 4, 3, 4)
+        BtnKembali.Name = "BtnKembali"
+        BtnKembali.Size = New Size(56, 58)
+        BtnKembali.TabIndex = 14
+        BtnKembali.UseVisualStyleBackColor = False
+        ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(15, 89)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.RowHeadersWidth = 51
+        DataGridView1.Size = New Size(845, 398)
+        DataGridView1.TabIndex = 15
         ' 
         ' DaftarUser
         ' 
-        AutoScaleDimensions = New SizeF(7F, 17F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Wheat
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Zoom
-        ClientSize = New Size(763, 560)
-        Controls.Add(Button1)
+        ClientSize = New Size(872, 659)
+        Controls.Add(DataGridView1)
+        Controls.Add(BtnKembali)
         Controls.Add(Label1)
-        Controls.Add(ListView1)
         DoubleBuffered = True
+        Margin = New Padding(3, 4, 3, 4)
         Name = "DaftarUser"
         Text = "DaftarUser"
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents ListView1 As ListView
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnKembali As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
