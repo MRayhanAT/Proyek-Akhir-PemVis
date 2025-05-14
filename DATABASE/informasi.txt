@@ -1,0 +1,16 @@
+user:
+no.HP(PK)
+username
+password
+KTP
+statusPinjaman(ada pinjaman/tidak ada pinjaman)
+
+Pinjaman:
+idPinjaman(PK)
+Nama
+Alamat
+Nominal
+cicilan (Waktu cicilan bisa 3 bulan/6 bulan/1 tahun)
+tanggalACCEPT(berisi tanggal pengajuan pinjaman di accept)
+status(pending/accept/reject)
+no.HP(FK)

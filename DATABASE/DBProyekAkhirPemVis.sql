@@ -16,6 +16,7 @@ Create table Pinjaman (
     Alamat varchar(100),
     Nominal int,
     cicilan varchar(50),
+    tanggalACCEPT date,
     status varchar(50) default "pending", 
     NomorHP_Pengguna bigint,
     FOREIGN KEY (NomorHP_Pengguna) REFERENCES tbUsers(NomorHP)
