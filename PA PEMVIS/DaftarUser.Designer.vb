@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class DaftarUser
     Inherits System.Windows.Forms.Form
 
@@ -33,11 +33,11 @@ Partial Class DaftarUser
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Swis721 Hv BT", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.SaddleBrown
-        Label1.Location = New Point(320, 25)
+        Label1.Location = New Point(280, 21)
         Label1.Name = "Label1"
-        Label1.Size = New Size(223, 46)
+        Label1.Size = New Size(201, 39)
         Label1.TabIndex = 1
         Label1.Text = "Daftar User"
         ' 
@@ -49,35 +49,35 @@ Partial Class DaftarUser
         BtnKembali.FlatAppearance.BorderSize = 0
         BtnKembali.FlatStyle = FlatStyle.Flat
         BtnKembali.ForeColor = Color.Transparent
-        BtnKembali.Location = New Point(15, 9)
-        BtnKembali.Margin = New Padding(3, 4, 3, 4)
+        BtnKembali.Location = New Point(13, 8)
         BtnKembali.Name = "BtnKembali"
-        BtnKembali.Size = New Size(56, 58)
+        BtnKembali.Size = New Size(49, 49)
         BtnKembali.TabIndex = 14
         BtnKembali.UseVisualStyleBackColor = False
         ' 
         ' DataGridView1
         ' 
+        DataGridView1.BackgroundColor = Color.OldLace
+        DataGridView1.BorderStyle = BorderStyle.Fixed3D
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(15, 89)
+        DataGridView1.Location = New Point(13, 77)
         DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(845, 398)
+        DataGridView1.Size = New Size(738, 300)
         DataGridView1.TabIndex = 15
         ' 
         ' DaftarUser
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 17F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Wheat
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Zoom
-        ClientSize = New Size(872, 659)
+        ClientSize = New Size(763, 560)
         Controls.Add(DataGridView1)
         Controls.Add(BtnKembali)
         Controls.Add(Label1)
         DoubleBuffered = True
-        Margin = New Padding(3, 4, 3, 4)
+        FormBorderStyle = FormBorderStyle.None
         Name = "DaftarUser"
         Text = "DaftarUser"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
