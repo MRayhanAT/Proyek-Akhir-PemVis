@@ -23,6 +23,7 @@ Create table Pinjaman (
 );
 
 select * from tbUsers;
+select * from Pinjaman;
 
 INSERT INTO tbUsers (NomorHP, username, password, KTP, statusPinjaman)
 VALUES (6281234567890, 'budi123', 'rahasia123', '3578012345678901', 'tidak ada pinjaman');

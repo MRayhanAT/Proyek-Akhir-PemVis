@@ -9,6 +9,7 @@ Public Module Module1
     Public DA As MySqlDataAdapter
     Public DS As DataSet
     Public STR As String
+
     Sub koneksi()
         System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance)
         Try

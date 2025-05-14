@@ -5,27 +5,40 @@ Public Class Login
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         If PeriksaKosongFormLogin() Then
             Try
-                If txtUsername.Text = "admin" And txtPassword.Text = "admin" Then
+                If txtUsername.Text = "admin1" And txtPassword.Text = "admin1" Then
                     MessageBox.Show("Login berhasil! Selamat datang, Admin")
                     Me.Hide()
                     HomeAdmin.Show()
-                End If
-
-                Module1.koneksi()
-
-                Module1.CMD = New MySqlCommand("SELECT username FROM tbUsers WHERE username = @UserName AND password = @pw", Module1.CONN)
-                Module1.CMD.Parameters.AddWithValue("@UserName", txtUsername.Text)
-                Module1.CMD.Parameters.AddWithValue("@pw", txtPassword.Text)
-
-                Module1.RD = Module1.CMD.ExecuteReader()
-                If Module1.RD.Read() Then
-                    Dim namaUser As String = Module1.RD("username")
-                    MessageBox.Show("Login berhasil! Selamat datang, " & namaUser)
-                    End 'ganti ke menu user biasa
+                    KosongkanForm()
+                ElseIf txtUsername.Text = "admin2" And txtPassword.Text = "admin2" Then
+                    MessageBox.Show("Login berhasil! Selamat datang, Admin")
+                    Me.Hide()
+                    HomeAdmin.Show()
+                    KosongkanForm()
+                ElseIf txtUsername.Text = "admin3" And txtPassword.Text = "admin3" Then
+                    MessageBox.Show("Login berhasil! Selamat datang, Admin")
+                    Me.Hide()
+                    HomeAdmin.Show()
+                    KosongkanForm()
                 Else
-                    MessageBox.Show("Login gagal. Username atau password salah.")
+                    Module1.koneksi()
+
+                    Module1.CMD = New MySqlCommand("SELECT username FROM tbUsers WHERE username = @UserName AND password = @pw", Module1.CONN)
+                    Module1.CMD.Parameters.AddWithValue("@UserName", txtUsername.Text)
+                    Module1.CMD.Parameters.AddWithValue("@pw", txtPassword.Text)
+
+                    Module1.RD = Module1.CMD.ExecuteReader()
+                    If Module1.RD.Read() Then
+                        Dim namaUser As String = Module1.RD("username")
+                        MessageBox.Show("Login berhasil! Selamat datang, " & namaUser)
+                        KosongkanForm()
+                        End 'ganti ke menu user biasa
+                    Else
+                        MessageBox.Show("Login gagal. Username atau password salah.")
+                    End If
+                    Module1.RD.Close()
                 End If
-                Module1.RD.Close()
+
 
             Catch ex As Exception
                 MessageBox.Show("Terjadi kesalahan saat login: " & ex.Message)
@@ -36,6 +49,11 @@ Public Class Login
                 End If
             End Try
         End If
+    End Sub
+
+    Private Sub KosongkanForm()
+        txtUsername.Text = ""
+        txtPassword.Text = ""
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -54,17 +72,6 @@ Public Class Login
         txtPassword.MaxLength = 50
     End Sub
 
-    Private Sub LihatPassword_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LihatPassword.LinkClicked
-        Dim lihat As Boolean
-        If txtPassword.PasswordChar = "*" Then
-            txtPassword.PasswordChar = ""
-            lihat = True
-        Else
-            txtPassword.PasswordChar = "*"
-            lihat = False
-        End If
-    End Sub
-
     Function PeriksaKosongFormLogin() As Boolean
         If txtUsername.Text = "" Then
             MessageBox.Show("username harus diisi", "WARNING",
@@ -78,4 +85,14 @@ Public Class Login
             Return True
         End If
     End Function
+
+    Private Sub LihatPass_Click(sender As Object, e As EventArgs) Handles LihatPass.Click
+        If txtPassword.PasswordChar = "*" Then
+            txtPassword.PasswordChar = ""
+            LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul_13
+        Else
+            txtPassword.PasswordChar = "*"
+            LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul_11
+        End If
+    End Sub
 End Class

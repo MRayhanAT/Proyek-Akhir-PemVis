@@ -73,6 +73,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Desain_tanpa_judul_11() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Desain_tanpa_judul_11", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Desain_tanpa_judul_13() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Desain_tanpa_judul_13", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Solusi_Keuangan_Cepat_dan_Aman__12_() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Solusi Keuangan Cepat dan Aman (12)", resourceCulture)

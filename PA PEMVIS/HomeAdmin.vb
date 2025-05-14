@@ -1,32 +1,17 @@
-Imports System.Text
 Imports MySql.Data.MySqlClient
 
 Public Class HomeAdmin
     Private CONN As MySqlConnection
 
     Private Sub HomeAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
         TampilkanTotal()
-    End Sub
-
-    Private Sub Koneksi()
-        Try
-            Dim connectionString As String =
-            "server=localhost;userid=root;password=;database=ProyekAkhirPemVis"
-            CONN = New MySqlConnection(connectionString)
-            If CONN.State = ConnectionState.Closed Then
-                CONN.Open()
-            End If
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
     End Sub
 
     Private Sub TampilkanTotal()
         Dim reader As MySqlDataReader = Nothing
 
         Try
-            Koneksi()
+            Module1.koneksi()
 
             Dim query As String = "SELECT 
                                     (SELECT COUNT(*) FROM tbUsers) AS TotalUser,
@@ -34,7 +19,7 @@ Public Class HomeAdmin
                                     (SELECT COUNT(*) FROM Pinjaman WHERE Status = 'Pengajuan Diterima') AS PinjamanDiterima,
                                     (SELECT COUNT(*) FROM Pinjaman WHERE Status = 'Pengajuan Ditolak') AS PinjamanDitolak"
 
-            Dim cmd As New MySqlCommand(query, CONN)
+            Dim cmd As New MySqlCommand(query, Module1.CONN)
             reader = cmd.ExecuteReader()
 
             If reader.Read() Then
