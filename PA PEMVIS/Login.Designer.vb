@@ -30,6 +30,7 @@ Partial Class Login
         txtPassword = New TextBox()
         Label2 = New Label()
         Label3 = New Label()
+        LihatPassword = New LinkLabel()
         SuspendLayout()
         ' 
         ' Label1
@@ -96,6 +97,7 @@ Partial Class Login
         txtPassword.Margin = New Padding(3, 4, 3, 4)
         txtPassword.Multiline = True
         txtPassword.Name = "txtPassword"
+        txtPassword.PasswordChar = "*"c
         txtPassword.Size = New Size(365, 37)
         txtPassword.TabIndex = 15
         ' 
@@ -123,6 +125,18 @@ Partial Class Login
         Label3.TabIndex = 19
         Label3.Text = "Password"
         ' 
+        ' LihatPassword
+        ' 
+        LihatPassword.AutoSize = True
+        LihatPassword.BackColor = Color.White
+        LihatPassword.LinkColor = Color.Black
+        LihatPassword.Location = New Point(680, 342)
+        LihatPassword.Name = "LihatPassword"
+        LihatPassword.Size = New Size(41, 20)
+        LihatPassword.TabIndex = 20
+        LihatPassword.TabStop = True
+        LihatPassword.Text = "Lihat"
+        ' 
         ' Login
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -130,6 +144,7 @@ Partial Class Login
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Zoom
         ClientSize = New Size(872, 659)
+        Controls.Add(LihatPassword)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(BtnLogin)
@@ -152,4 +167,5 @@ Partial Class Login
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents LihatPassword As LinkLabel
 End Class
