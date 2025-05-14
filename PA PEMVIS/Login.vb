@@ -23,19 +23,23 @@ Public Class Login
                 Else
                     Module1.koneksi()
 
-                    Module1.CMD = New MySqlCommand("SELECT username FROM tbUsers WHERE username = @UserName AND password = @pw", Module1.CONN)
+                    Module1.CMD = New MySqlCommand("SELECT username, NomorHP FROM tbUsers WHERE username = @UserName AND password = @pw", Module1.CONN)
                     Module1.CMD.Parameters.AddWithValue("@UserName", txtUsername.Text)
                     Module1.CMD.Parameters.AddWithValue("@pw", txtPassword.Text)
 
                     Module1.RD = Module1.CMD.ExecuteReader()
                     If Module1.RD.Read() Then
-                        Dim namaUser As String = Module1.RD("username")
-                        MessageBox.Show("Login berhasil! Selamat datang, " & namaUser)
-                        KosongkanForm()
-                        End 'ganti ke menu user biasa
+                        GlobalVariables.Username = Module1.RD("username").ToString()
+                        GlobalVariables.nomor_hp_user = Convert.ToInt64(Module1.RD("NomorHP"))
+
+                        MessageBox.Show("Login berhasil! Selamat datang, " & GlobalVariables.Username)
+
+                        Me.Hide()
+                        HomeUser.Show()
                     Else
                         MessageBox.Show("Login gagal. Username atau password salah.")
                     End If
+
                     Module1.RD.Close()
                 End If
 
