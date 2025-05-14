@@ -79,8 +79,7 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-05-13T07:09:01.037Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -93,8 +92,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-05-14T03:48:35.072Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -104,7 +102,7 @@
               "RelativeDocumentMoniker": "PA PEMVIS\\Login.vb",
               "ToolTip": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\Login.vb",
               "RelativeToolTip": "PA PEMVIS\\Login.vb",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAxwFwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-05-13T07:05:13.089Z",
               "IsPinned": true,
@@ -149,8 +147,7 @@
               "RelativeToolTip": "PA PEMVIS\\My Project\\Application.myapp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-14T06:21:05.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T06:21:05.905Z"
             },
             {
               "$type": "Document",
@@ -186,8 +183,7 @@
               "RelativeToolTip": "PA PEMVIS\\DaftarAkun.vb",
               "ViewState": "AgIAAAcAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-05-13T07:44:15.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T07:44:15.837Z"
             },
             {
               "$type": "Document",
