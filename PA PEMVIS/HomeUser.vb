@@ -45,7 +45,11 @@ Public Class HomeUser
         Me.Hide()
     End Sub
 
-    Private Sub HomeUser_Load(sender As Object, e As EventArgs) Handles Me.Load
+    'Private Sub HomeUser_Load(sender As Object, e As EventArgs) Handles Me.Load
+    '    UserName.Text = GlobalVariables.Username
+    'End Sub
+
+    Private Sub HomeUser_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         UserName.Text = GlobalVariables.Username
     End Sub
 End Class
