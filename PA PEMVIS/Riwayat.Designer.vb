@@ -36,8 +36,8 @@ Partial Class Riwayat
         Button2 = New Button()
         Label11 = New Label()
         Label2 = New Label()
-        txtID = New TextBox()
         lbID = New Label()
+        lbID2 = New Label()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -207,14 +207,6 @@ Partial Class Riwayat
         Label2.TabIndex = 49
         Label2.Text = ":"
         ' 
-        ' txtID
-        ' 
-        txtID.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtID.Location = New Point(203, 334)
-        txtID.Name = "txtID"
-        txtID.Size = New Size(217, 26)
-        txtID.TabIndex = 48
-        ' 
         ' lbID
         ' 
         lbID.AutoSize = True
@@ -227,6 +219,17 @@ Partial Class Riwayat
         lbID.TabIndex = 47
         lbID.Text = "ID"
         ' 
+        ' lbID2
+        ' 
+        lbID2.AutoSize = True
+        lbID2.BackColor = Color.Transparent
+        lbID2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        lbID2.ForeColor = Color.SaddleBrown
+        lbID2.Location = New Point(210, 334)
+        lbID2.Name = "lbID2"
+        lbID2.Size = New Size(0, 24)
+        lbID2.TabIndex = 50
+        ' 
         ' Riwayat
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
@@ -235,8 +238,8 @@ Partial Class Riwayat
         BackgroundImage = My.Resources.Resources.Solusi_Keuangan_Cepat_dan_Aman__13_
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(763, 494)
+        Controls.Add(lbID2)
         Controls.Add(Label2)
-        Controls.Add(txtID)
         Controls.Add(lbID)
         Controls.Add(Label11)
         Controls.Add(Button2)
@@ -271,6 +274,6 @@ Partial Class Riwayat
     Friend WithEvents Button2 As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtID As TextBox
     Friend WithEvents lbID As Label
+    Friend WithEvents lbID2 As Label
 End Class
