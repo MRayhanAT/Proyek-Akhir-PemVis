@@ -30,13 +30,18 @@ Public Class HomeUser
         e.DrawFocusRectangle()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub BtnLogout_Click(sender As Object, e As EventArgs) Handles BtnLogout.Click
         FMenu.Show()
         Me.Hide()
     End Sub
 
     Private Sub BtnAjukan_Click(sender As Object, e As EventArgs) Handles BtnAjukan.Click
         AjukanPijaman.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BtnRiwayat_Click(sender As Object, e As EventArgs) Handles BtnRiwayat.Click
+        Riwayat.Show()
         Me.Hide()
     End Sub
 End Class
