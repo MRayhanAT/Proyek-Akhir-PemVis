@@ -36,6 +36,7 @@ Public Class Login
 
                         Me.Hide()
                         HomeUser.Show()
+                        KosongkanForm()
                     Else
                         MessageBox.Show("Login gagal. Username atau password salah.")
                     End If
@@ -96,5 +97,21 @@ Public Class Login
             txtPassword.PasswordChar = "*"
             LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul_11
         End If
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtPassword.PasswordChar = "*"
+        LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul_11
+        GlobalVariables.AkunAdmin(0, 0) = "63"
+        GlobalVariables.AkunAdmin(0, 1) = "daffa"
+        GlobalVariables.AkunAdmin(1, 0) = "59"
+        GlobalVariables.AkunAdmin(1, 1) = "ayya"
+        GlobalVariables.AkunAdmin(2, 0) = "50"
+        GlobalVariables.AkunAdmin(2, 1) = "rehan"
+    End Sub
+
+    Private Sub Login_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        txtPassword.PasswordChar = "*"
+        LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul_11
     End Sub
 End Class

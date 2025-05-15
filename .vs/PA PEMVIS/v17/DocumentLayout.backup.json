@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|c:\\users\\asus tuf\\documents\\kuliah\\smt 4\\praktikum\\programan visual\\proyek akhir\\pa pemvis\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|solutionrelative:pa pemvis\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|c:\\users\\asus tuf\\documents\\kuliah\\smt 4\\praktikum\\programan visual\\proyek akhir\\pa pemvis\\globalvariables.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|solutionrelative:pa pemvis\\globalvariables.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|c:\\users\\asus tuf\\documents\\kuliah\\smt 4\\praktikum\\programan visual\\proyek akhir\\pa pemvis\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|solutionrelative:pa pemvis\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|c:\\users\\asus tuf\\documents\\kuliah\\smt 4\\praktikum\\programan visual\\proyek akhir\\pa pemvis\\homeuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|solutionrelative:pa pemvis\\homeuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|c:\\users\\asus tuf\\documents\\kuliah\\smt 4\\praktikum\\programan visual\\proyek akhir\\pa pemvis\\homeuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|solutionrelative:pa pemvis\\homeuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|c:\\users\\asus tuf\\documents\\kuliah\\smt 4\\praktikum\\programan visual\\proyek akhir\\pa pemvis\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|solutionrelative:pa pemvis\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|c:\\users\\asus tuf\\documents\\kuliah\\smt 4\\praktikum\\programan visual\\proyek akhir\\pa pemvis\\daftarakun.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|c:\\users\\asus tuf\\documents\\kuliah\\smt 4\\praktikum\\programan visual\\proyek akhir\\pa pemvis\\fmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|solutionrelative:pa pemvis\\fmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|c:\\users\\asus tuf\\documents\\kuliah\\smt 4\\praktikum\\programan visual\\proyek akhir\\pa pemvis\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{FC9AA3A5-36A5-4633-A3AC-E3528519FB46}|PA PEMVIS\\PA PEMVIS.vbproj|solutionrelative:pa pemvis\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "FMenu.vb",
               "DocumentMoniker": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\FMenu.vb",
               "RelativeDocumentMoniker": "PA PEMVIS\\FMenu.vb",
@@ -55,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Login.vb",
               "DocumentMoniker": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\Login.vb",
               "RelativeDocumentMoniker": "PA PEMVIS\\Login.vb",
               "ToolTip": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\Login.vb",
               "RelativeToolTip": "PA PEMVIS\\Login.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-05-15T13:24:11.227Z",
               "IsPinned": true,
@@ -69,7 +73,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "GlobalVariables.vb",
+              "DocumentMoniker": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\GlobalVariables.vb",
+              "RelativeDocumentMoniker": "PA PEMVIS\\GlobalVariables.vb",
+              "ToolTip": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\GlobalVariables.vb",
+              "RelativeToolTip": "PA PEMVIS\\GlobalVariables.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-15T14:42:20.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "HomeUser.vb",
               "DocumentMoniker": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\HomeUser.vb",
               "RelativeDocumentMoniker": "PA PEMVIS\\HomeUser.vb",
@@ -77,12 +98,11 @@
               "RelativeToolTip": "PA PEMVIS\\HomeUser.vb",
               "ViewState": "AgIAACAAAAAAAAAAAIA9wDEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-05-15T14:14:58.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T14:14:58.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HomeUser.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\HomeUser.vb",
               "RelativeDocumentMoniker": "PA PEMVIS\\HomeUser.vb",
@@ -93,12 +113,8 @@
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DaftarAkun.vb",
               "DocumentMoniker": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\DaftarAkun.vb",
               "RelativeDocumentMoniker": "PA PEMVIS\\DaftarAkun.vb",
@@ -106,12 +122,11 @@
               "RelativeToolTip": "PA PEMVIS\\DaftarAkun.vb",
               "ViewState": "AgIAAAEAAAAAAAAAAAAQwEIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-05-15T13:45:39.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T13:45:39.288Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DaftarAkun.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\DaftarAkun.vb",
               "RelativeDocumentMoniker": "PA PEMVIS\\DaftarAkun.vb",
@@ -123,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Login.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\Login.vb",
               "RelativeDocumentMoniker": "PA PEMVIS\\Login.vb",
