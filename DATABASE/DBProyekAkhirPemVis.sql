@@ -23,6 +23,13 @@ Create table Pinjaman (
     AdminAccept varchar(50)
 );
 
+Create table Catatan (
+	idCatatan INT AUTO_INCREMENT PRIMARY KEY,
+    catatan varchar(50),
+    nomorHP bigint,
+    FOREIGN KEY (nomorHP) REFERENCES tbUsers(NomorHP)
+);
+
 select * from tbUsers;
 select * from Pinjaman;
 
