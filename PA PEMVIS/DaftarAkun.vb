@@ -93,15 +93,15 @@ Public Class DaftarAkun
 
     Private Function PeriksaKosong()
         If txtPassword.Text = "" Or txtPassword.Text = "Masukkan Password" Then
-            MessageBox.Show("Kode Barang harus diisi", "WARNING",
+            MessageBox.Show("Username harus diisi", "WARNING",
             MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return False
         ElseIf txtUsername.Text = "" Or txtUsername.Text = " Masukkan Username" Then
-            MessageBox.Show("Nama Barang harus diisi", "WARNING",
+            MessageBox.Show("Password harus diisi", "WARNING",
             MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return False
         ElseIf TextBox3.Text = "" Or TextBox3.Text = " Masukkan Nomor HP" Then
-            MessageBox.Show("Nama Barang harus diisi", "WARNING",
+            MessageBox.Show("No. HP harus diisi", "WARNING",
             MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return False
         Else
