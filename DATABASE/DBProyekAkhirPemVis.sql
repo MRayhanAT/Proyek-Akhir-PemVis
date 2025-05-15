@@ -19,7 +19,8 @@ Create table Pinjaman (
     tanggalACCEPT DATE DEFAULT '1000-01-01',
     status varchar(50) default "pending", 
     NomorHP_Pengguna bigint,
-    FOREIGN KEY (NomorHP_Pengguna) REFERENCES tbUsers(NomorHP)
+    FOREIGN KEY (NomorHP_Pengguna) REFERENCES tbUsers(NomorHP),
+    AdminAccept varchar(50)
 );
 
 select * from tbUsers;
