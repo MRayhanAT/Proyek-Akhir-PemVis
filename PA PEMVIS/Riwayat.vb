@@ -70,7 +70,7 @@ Public Class Riwayat
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         If e.RowIndex >= 0 Then
             Dim selectedRow As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
-            txtID.Text = selectedRow.Cells("idPinjaman").Value.ToString()
+            lbID2.Text = selectedRow.Cells("idPinjaman").Value.ToString()
             txtNominal.Text = selectedRow.Cells("Nominal").Value.ToString()
             cbCicilan.Text = selectedRow.Cells("cicilan").Value.ToString()
         End If
@@ -82,7 +82,7 @@ Public Class Riwayat
 
             Dim query As String = "UPDATE Pinjaman SET Nominal = @nominal, cicilan = @cicilan WHERE idPinjaman = @id"
             Dim cmd As New MySqlCommand(query, Module1.CONN)
-            cmd.Parameters.AddWithValue("@id", txtID.Text)
+            cmd.Parameters.AddWithValue("@id", lbID2.Text)
             cmd.Parameters.AddWithValue("@nominal", txtNominal.Text)
             cmd.Parameters.AddWithValue("@cicilan", cbCicilan.Text)
 
@@ -105,7 +105,7 @@ Public Class Riwayat
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        txtID.Clear()
+        lbID2.Text = ""
         txtNominal.Clear()
         cbCicilan.Text = ""
     End Sub
