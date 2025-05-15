@@ -128,7 +128,7 @@ Partial Class Login
         ' LihatPass
         ' 
         LihatPass.BackColor = Color.Transparent
-        LihatPass.BackgroundImage = My.Resources.Resources.Desain_tanpa_judul_13
+        LihatPass.BackgroundImage = My.Resources.Resources.Desain_tanpa_judul_11
         LihatPass.BackgroundImageLayout = ImageLayout.Zoom
         LihatPass.FlatAppearance.BorderSize = 0
         LihatPass.FlatStyle = FlatStyle.Flat

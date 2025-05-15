@@ -57,4 +57,9 @@ Public Class AjukanPijaman
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub BtnBatal_Click(sender As Object, e As EventArgs) Handles BtnBatal.Click
+        Me.Hide()
+        HomeUser.Show()
+    End Sub
 End Class

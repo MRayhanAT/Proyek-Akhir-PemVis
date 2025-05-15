@@ -14,3 +14,4 @@ cicilan (Waktu cicilan bisa 3 bulan/6 bulan/1 tahun)
 tanggalACCEPT(berisi tanggal pengajuan pinjaman di accept)
 status(pending/accept/reject)
 no.HP(FK)
+Admin

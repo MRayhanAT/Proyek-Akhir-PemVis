@@ -46,3 +46,4 @@ C:\Users\Asus TUF\Documents\Kuliah\SMT 4\Praktikum\Programan Visual\Proyek Akhir
 C:\Users\Asus TUF\Documents\Kuliah\SMT 4\Praktikum\Programan Visual\Proyek Akhir\PA PEMVIS\obj\Debug\net8.0-windows\PA PEMVIS.vbproj.Up2Date
 C:\Users\Asus TUF\Documents\Kuliah\SMT 4\Praktikum\Programan Visual\Proyek Akhir\PA PEMVIS\obj\Debug\net8.0-windows\PA PEMVIS.genruntimeconfig.cache
 C:\Users\Asus TUF\Documents\Kuliah\SMT 4\Praktikum\Programan Visual\Proyek Akhir\PA PEMVIS\obj\Debug\net8.0-windows\ref\PA PEMVIS.dll
+C:\Users\Asus TUF\Documents\Kuliah\SMT 4\Praktikum\Programan Visual\Proyek Akhir\PA PEMVIS\obj\Debug\net8.0-windows\PA_PEMVIS.Riwayat.resources

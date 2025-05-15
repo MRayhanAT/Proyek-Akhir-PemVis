@@ -55,53 +55,59 @@ Partial Class Riwayat
         BtnKembali.FlatAppearance.BorderSize = 0
         BtnKembali.FlatStyle = FlatStyle.Flat
         BtnKembali.ForeColor = Color.Transparent
-        BtnKembali.Location = New Point(9, 8)
+        BtnKembali.Location = New Point(10, 9)
+        BtnKembali.Margin = New Padding(3, 4, 3, 4)
         BtnKembali.Name = "BtnKembali"
-        BtnKembali.Size = New Size(49, 49)
+        BtnKembali.Size = New Size(56, 58)
         BtnKembali.TabIndex = 14
         BtnKembali.UseVisualStyleBackColor = False
         ' 
         ' DataGridView1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(38, 71)
+        DataGridView1.Location = New Point(43, 84)
+        DataGridView1.Margin = New Padding(3, 4, 3, 4)
         DataGridView1.Name = "DataGridView1"
-        DataGridView1.Size = New Size(692, 283)
+        DataGridView1.RowHeadersWidth = 51
+        DataGridView1.Size = New Size(791, 333)
         DataGridView1.TabIndex = 15
         ' 
         ' txtNominal
         ' 
-        txtNominal.Font = New Font("Swis721 Cn BT", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtNominal.Location = New Point(203, 471)
+        txtNominal.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtNominal.Location = New Point(232, 554)
+        txtNominal.Margin = New Padding(3, 4, 3, 4)
         txtNominal.Name = "txtNominal"
-        txtNominal.Size = New Size(217, 27)
+        txtNominal.Size = New Size(247, 30)
         txtNominal.TabIndex = 35
         ' 
         ' txtAlamat
         ' 
-        txtAlamat.Font = New Font("Swis721 Cn BT", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtAlamat.Location = New Point(203, 440)
+        txtAlamat.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtAlamat.Location = New Point(232, 518)
+        txtAlamat.Margin = New Padding(3, 4, 3, 4)
         txtAlamat.Name = "txtAlamat"
-        txtAlamat.Size = New Size(217, 27)
+        txtAlamat.Size = New Size(247, 30)
         txtAlamat.TabIndex = 34
         ' 
         ' txtNomorHP
         ' 
-        txtNomorHP.Font = New Font("Swis721 Cn BT", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtNomorHP.Location = New Point(203, 409)
+        txtNomorHP.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtNomorHP.Location = New Point(232, 481)
+        txtNomorHP.Margin = New Padding(3, 4, 3, 4)
         txtNomorHP.Name = "txtNomorHP"
-        txtNomorHP.Size = New Size(217, 27)
+        txtNomorHP.Size = New Size(247, 30)
         txtNomorHP.TabIndex = 33
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
         Label6.BackColor = Color.Transparent
-        Label6.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.SaddleBrown
-        Label6.Location = New Point(38, 471)
+        Label6.Location = New Point(43, 554)
         Label6.Name = "Label6"
-        Label6.Size = New Size(147, 22)
+        Label6.Size = New Size(225, 29)
         Label6.TabIndex = 32
         Label6.Text = "Nominal Pinjaman"
         ' 
@@ -109,11 +115,11 @@ Partial Class Riwayat
         ' 
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.SaddleBrown
-        Label5.Location = New Point(38, 440)
+        Label5.Location = New Point(43, 518)
         Label5.Name = "Label5"
-        Label5.Size = New Size(62, 22)
+        Label5.Size = New Size(92, 29)
         Label5.TabIndex = 31
         Label5.Text = "Alamat"
         ' 
@@ -121,31 +127,32 @@ Partial Class Riwayat
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.SaddleBrown
-        Label4.Location = New Point(38, 409)
+        Label4.Location = New Point(43, 481)
         Label4.Name = "Label4"
-        Label4.Size = New Size(85, 22)
+        Label4.Size = New Size(134, 29)
         Label4.TabIndex = 30
         Label4.Text = "Nomor HP"
         ' 
         ' txtNama
         ' 
-        txtNama.Font = New Font("Swis721 Cn BT", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtNama.Location = New Point(203, 378)
+        txtNama.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtNama.Location = New Point(232, 445)
+        txtNama.Margin = New Padding(3, 4, 3, 4)
         txtNama.Name = "txtNama"
-        txtNama.Size = New Size(217, 27)
+        txtNama.Size = New Size(247, 30)
         txtNama.TabIndex = 29
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.SaddleBrown
-        Label3.Location = New Point(38, 378)
+        Label3.Location = New Point(43, 445)
         Label3.Name = "Label3"
-        Label3.Size = New Size(53, 22)
+        Label3.Size = New Size(81, 29)
         Label3.TabIndex = 28
         Label3.Text = "Nama"
         ' 
@@ -153,11 +160,11 @@ Partial Class Riwayat
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.SaddleBrown
-        Label1.Location = New Point(188, 472)
+        Label1.Location = New Point(215, 555)
         Label1.Name = "Label1"
-        Label1.Size = New Size(15, 22)
+        Label1.Size = New Size(20, 29)
         Label1.TabIndex = 39
         Label1.Text = ":"
         ' 
@@ -165,11 +172,11 @@ Partial Class Riwayat
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.SaddleBrown
-        Label2.Location = New Point(188, 441)
+        Label2.Location = New Point(215, 519)
         Label2.Name = "Label2"
-        Label2.Size = New Size(15, 22)
+        Label2.Size = New Size(20, 29)
         Label2.TabIndex = 38
         Label2.Text = ":"
         ' 
@@ -177,11 +184,11 @@ Partial Class Riwayat
         ' 
         Label7.AutoSize = True
         Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.SaddleBrown
-        Label7.Location = New Point(188, 410)
+        Label7.Location = New Point(215, 482)
         Label7.Name = "Label7"
-        Label7.Size = New Size(15, 22)
+        Label7.Size = New Size(20, 29)
         Label7.TabIndex = 37
         Label7.Text = ":"
         ' 
@@ -189,11 +196,11 @@ Partial Class Riwayat
         ' 
         Label8.AutoSize = True
         Label8.BackColor = Color.Transparent
-        Label8.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label8.ForeColor = Color.SaddleBrown
-        Label8.Location = New Point(188, 379)
+        Label8.Location = New Point(215, 446)
         Label8.Name = "Label8"
-        Label8.Size = New Size(15, 22)
+        Label8.Size = New Size(20, 29)
         Label8.TabIndex = 36
         Label8.Text = ":"
         ' 
@@ -201,11 +208,11 @@ Partial Class Riwayat
         ' 
         Label9.AutoSize = True
         Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label9.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.SaddleBrown
-        Label9.Location = New Point(38, 504)
+        Label9.Location = New Point(43, 593)
         Label9.Name = "Label9"
-        Label9.Size = New Size(62, 22)
+        Label9.Size = New Size(93, 29)
         Label9.TabIndex = 40
         Label9.Text = "Cicilan"
         ' 
@@ -213,22 +220,23 @@ Partial Class Riwayat
         ' 
         Label10.AutoSize = True
         Label10.BackColor = Color.Transparent
-        Label10.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.ForeColor = Color.SaddleBrown
-        Label10.Location = New Point(188, 505)
+        Label10.Location = New Point(215, 594)
         Label10.Name = "Label10"
-        Label10.Size = New Size(15, 22)
+        Label10.Size = New Size(20, 29)
         Label10.TabIndex = 41
         Label10.Text = ":"
         ' 
         ' cbCicilan
         ' 
-        cbCicilan.Font = New Font("Swis721 Cn BT", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cbCicilan.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         cbCicilan.FormattingEnabled = True
         cbCicilan.Items.AddRange(New Object() {"3 Bulan", "6 Bulan", "12 Bulan"})
-        cbCicilan.Location = New Point(203, 505)
+        cbCicilan.Location = New Point(232, 594)
+        cbCicilan.Margin = New Padding(3, 4, 3, 4)
         cbCicilan.Name = "cbCicilan"
-        cbCicilan.Size = New Size(217, 27)
+        cbCicilan.Size = New Size(247, 33)
         cbCicilan.TabIndex = 42
         ' 
         ' BtnAjukan
@@ -240,11 +248,12 @@ Partial Class Riwayat
         BtnAjukan.FlatAppearance.MouseDownBackColor = Color.Transparent
         BtnAjukan.FlatAppearance.MouseOverBackColor = Color.Cornsilk
         BtnAjukan.FlatStyle = FlatStyle.Flat
-        BtnAjukan.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnAjukan.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnAjukan.ForeColor = SystemColors.ControlLightLight
-        BtnAjukan.Location = New Point(443, 378)
+        BtnAjukan.Location = New Point(506, 445)
+        BtnAjukan.Margin = New Padding(3, 4, 3, 4)
         BtnAjukan.Name = "BtnAjukan"
-        BtnAjukan.Size = New Size(287, 44)
+        BtnAjukan.Size = New Size(328, 52)
         BtnAjukan.TabIndex = 43
         BtnAjukan.Text = "Simpan Perubahan"
         BtnAjukan.UseVisualStyleBackColor = False
@@ -258,11 +267,12 @@ Partial Class Riwayat
         Button1.FlatAppearance.MouseDownBackColor = Color.Transparent
         Button1.FlatAppearance.MouseOverBackColor = Color.Cornsilk
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = SystemColors.ControlLightLight
-        Button1.Location = New Point(443, 488)
+        Button1.Location = New Point(506, 574)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(287, 44)
+        Button1.Size = New Size(328, 52)
         Button1.TabIndex = 44
         Button1.Text = "Batalkan Pinjaman"
         Button1.UseVisualStyleBackColor = False
@@ -276,11 +286,12 @@ Partial Class Riwayat
         Button2.FlatAppearance.MouseDownBackColor = Color.Transparent
         Button2.FlatAppearance.MouseOverBackColor = Color.Cornsilk
         Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button2.ForeColor = SystemColors.ControlLightLight
-        Button2.Location = New Point(443, 433)
+        Button2.Location = New Point(506, 509)
+        Button2.Margin = New Padding(3, 4, 3, 4)
         Button2.Name = "Button2"
-        Button2.Size = New Size(287, 44)
+        Button2.Size = New Size(328, 52)
         Button2.TabIndex = 45
         Button2.Text = "Batalkan Perubahan"
         Button2.UseVisualStyleBackColor = False
@@ -289,22 +300,22 @@ Partial Class Riwayat
         ' 
         Label11.AutoSize = True
         Label11.BackColor = Color.Transparent
-        Label11.Font = New Font("Swis721 Hv BT", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label11.Font = New Font("Microsoft Sans Serif", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label11.ForeColor = Color.SaddleBrown
-        Label11.Location = New Point(231, 18)
+        Label11.Location = New Point(264, 21)
         Label11.Name = "Label11"
-        Label11.Size = New Size(301, 39)
+        Label11.Size = New Size(340, 46)
         Label11.TabIndex = 46
         Label11.Text = "Riwayat Pinjaman"
         ' 
         ' Riwayat
         ' 
-        AutoScaleDimensions = New SizeF(7F, 17F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonFace
-        BackgroundImage = My.Resources.Resources.Solusi_Keuangan_Cepat_dan_Aman__13_1
-        BackgroundImageLayout = ImageLayout.Zoom
-        ClientSize = New Size(763, 560)
+        BackgroundImage = My.Resources.Resources.Solusi_Keuangan_Cepat_dan_Aman__13_
+        'BackgroundImageLayout = ImageLayout.Zoom
+        ClientSize = New Size(872, 659)
         Controls.Add(Label11)
         Controls.Add(Button2)
         Controls.Add(Button1)
@@ -327,6 +338,7 @@ Partial Class Riwayat
         Controls.Add(DataGridView1)
         Controls.Add(BtnKembali)
         DoubleBuffered = True
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Riwayat"
         Text = "Riwayat"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()

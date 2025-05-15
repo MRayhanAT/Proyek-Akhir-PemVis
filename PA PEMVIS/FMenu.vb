@@ -24,6 +24,21 @@ Public Module Module1
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
+    Public Sub HanyaAngka(e As KeyPressEventArgs)
+        Dim tombol As Integer = Asc(e.KeyChar)
+        If Not (((tombol >= 48) And (tombol <= 57)) Or (tombol = 8)) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Public Sub HanyaHuruf(e As KeyPressEventArgs)
+        Dim tombol As Integer = Asc(e.KeyChar)
+        If Not (((tombol >= 65) And (tombol <= 90)) Or ((tombol >= 97) And
+        (tombol <= 122)) Or (tombol = 8) Or (tombol = 32) Or (tombol = 46)) Then
+            e.Handled = True
+        End If
+    End Sub
 End Module
 
 Public Class FMenu

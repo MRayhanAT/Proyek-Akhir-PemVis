@@ -5,17 +5,17 @@ Public Class Login
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         If PeriksaKosongFormLogin() Then
             Try
-                If txtUsername.Text = "admin1" And txtPassword.Text = "admin1" Then
+                If txtUsername.Text = 63 And txtPassword.Text = "daffa" Then
                     MessageBox.Show("Login berhasil! Selamat datang, Admin")
                     Me.Hide()
                     HomeAdmin.Show()
                     KosongkanForm()
-                ElseIf txtUsername.Text = "admin2" And txtPassword.Text = "admin2" Then
+                ElseIf txtUsername.Text = 59 And txtPassword.Text = "ayya" Then
                     MessageBox.Show("Login berhasil! Selamat datang, Admin")
                     Me.Hide()
                     HomeAdmin.Show()
                     KosongkanForm()
-                ElseIf txtUsername.Text = "admin3" And txtPassword.Text = "admin3" Then
+                ElseIf txtUsername.Text = 50 And txtPassword.Text = "rehan" Then
                     MessageBox.Show("Login berhasil! Selamat datang, Admin")
                     Me.Hide()
                     HomeAdmin.Show()
@@ -23,7 +23,7 @@ Public Class Login
                 Else
                     Module1.koneksi()
 
-                    Module1.CMD = New MySqlCommand("SELECT username, NomorHP FROM tbUsers WHERE username = @UserName AND password = @pw", Module1.CONN)
+                    Module1.CMD = New MySqlCommand("SELECT username, NomorHP FROM tbUsers WHERE NomorHP = @UserName AND password = @pw", Module1.CONN)
                     Module1.CMD.Parameters.AddWithValue("@UserName", txtUsername.Text)
                     Module1.CMD.Parameters.AddWithValue("@pw", txtPassword.Text)
 
@@ -67,9 +67,7 @@ Public Class Login
 
     Private Sub txtUsername_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUsername.KeyPress
         txtUsername.MaxLength = 50
-        If (e.KeyChar = Chr(13)) Then
-            txtPassword.Focus()
-        End If
+        Module1.HanyaAngka(e)
     End Sub
 
     Private Sub txtPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPassword.KeyPress

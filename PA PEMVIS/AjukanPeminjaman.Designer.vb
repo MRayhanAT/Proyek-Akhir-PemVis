@@ -32,6 +32,9 @@ Partial Class AjukanPijaman
         txtAlamat = New TextBox()
         txtNominal = New TextBox()
         gbCicilan = New GroupBox()
+        RadioButton3 = New RadioButton()
+        RadioButton2 = New RadioButton()
+        RadioButton1 = New RadioButton()
         BtnAjukan = New Button()
         BtnBatal = New Button()
         Label7 = New Label()
@@ -40,9 +43,6 @@ Partial Class AjukanPijaman
         Label10 = New Label()
         lbNama_pengajuan = New Label()
         lbNomor = New Label()
-        RadioButton1 = New RadioButton()
-        RadioButton2 = New RadioButton()
-        RadioButton3 = New RadioButton()
         gbCicilan.SuspendLayout()
         SuspendLayout()
         ' 
@@ -52,9 +52,9 @@ Partial Class AjukanPijaman
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(634, 454)
+        Label1.Location = New Point(725, 605)
         Label1.Name = "Label1"
-        Label1.Size = New Size(134, 33)
+        Label1.Size = New Size(172, 42)
         Label1.TabIndex = 1
         Label1.Text = "SihCepat"
         ' 
@@ -62,11 +62,11 @@ Partial Class AjukanPijaman
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Microsoft Sans Serif", 24.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.SaddleBrown
-        Label2.Location = New Point(202, 69)
+        Label2.Location = New Point(231, 92)
         Label2.Name = "Label2"
-        Label2.Size = New Size(323, 37)
+        Label2.Size = New Size(399, 46)
         Label2.TabIndex = 2
         Label2.Text = "Formulir Peminjaman"
         ' 
@@ -74,11 +74,11 @@ Partial Class AjukanPijaman
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Microsoft Sans Serif", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.SaddleBrown
-        Label3.Location = New Point(104, 131)
+        Label3.Location = New Point(119, 175)
         Label3.Name = "Label3"
-        Label3.Size = New Size(81, 29)
+        Label3.Size = New Size(96, 36)
         Label3.TabIndex = 19
         Label3.Text = "Nama"
         ' 
@@ -86,11 +86,11 @@ Partial Class AjukanPijaman
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Microsoft Sans Serif", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.SaddleBrown
-        Label4.Location = New Point(104, 167)
+        Label4.Location = New Point(119, 223)
         Label4.Name = "Label4"
-        Label4.Size = New Size(134, 29)
+        Label4.Size = New Size(161, 36)
         Label4.TabIndex = 22
         Label4.Text = "Nomor HP"
         ' 
@@ -98,11 +98,11 @@ Partial Class AjukanPijaman
         ' 
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Microsoft Sans Serif", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.SaddleBrown
-        Label5.Location = New Point(104, 204)
+        Label5.Location = New Point(119, 272)
         Label5.Name = "Label5"
-        Label5.Size = New Size(92, 29)
+        Label5.Size = New Size(112, 36)
         Label5.TabIndex = 23
         Label5.Text = "Alamat"
         ' 
@@ -110,26 +110,28 @@ Partial Class AjukanPijaman
         ' 
         Label6.AutoSize = True
         Label6.BackColor = Color.Transparent
-        Label6.Font = New Font("Microsoft Sans Serif", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.SaddleBrown
-        Label6.Location = New Point(104, 242)
+        Label6.Location = New Point(119, 323)
         Label6.Name = "Label6"
-        Label6.Size = New Size(110, 29)
+        Label6.Size = New Size(131, 36)
         Label6.TabIndex = 24
         Label6.Text = "Nominal"
         ' 
         ' txtAlamat
         ' 
-        txtAlamat.Location = New Point(314, 204)
+        txtAlamat.Location = New Point(359, 272)
+        txtAlamat.Margin = New Padding(3, 4, 3, 4)
         txtAlamat.Name = "txtAlamat"
-        txtAlamat.Size = New Size(342, 23)
+        txtAlamat.Size = New Size(390, 27)
         txtAlamat.TabIndex = 26
         ' 
         ' txtNominal
         ' 
-        txtNominal.Location = New Point(314, 242)
+        txtNominal.Location = New Point(359, 323)
+        txtNominal.Margin = New Padding(3, 4, 3, 4)
         txtNominal.Name = "txtNominal"
-        txtNominal.Size = New Size(342, 23)
+        txtNominal.Size = New Size(390, 27)
         txtNominal.TabIndex = 27
         ' 
         ' gbCicilan
@@ -141,12 +143,50 @@ Partial Class AjukanPijaman
         gbCicilan.FlatStyle = FlatStyle.Flat
         gbCicilan.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         gbCicilan.ForeColor = Color.SaddleBrown
-        gbCicilan.Location = New Point(314, 286)
+        gbCicilan.Location = New Point(359, 381)
+        gbCicilan.Margin = New Padding(3, 4, 3, 4)
         gbCicilan.Name = "gbCicilan"
-        gbCicilan.Size = New Size(342, 132)
+        gbCicilan.Padding = New Padding(3, 4, 3, 4)
+        gbCicilan.Size = New Size(391, 176)
         gbCicilan.TabIndex = 28
         gbCicilan.TabStop = False
         gbCicilan.Text = "Cicilan"
+        ' 
+        ' RadioButton3
+        ' 
+        RadioButton3.AutoSize = True
+        RadioButton3.Location = New Point(7, 124)
+        RadioButton3.Margin = New Padding(3, 4, 3, 4)
+        RadioButton3.Name = "RadioButton3"
+        RadioButton3.Size = New Size(305, 35)
+        RadioButton3.TabIndex = 5
+        RadioButton3.TabStop = True
+        RadioButton3.Text = "12 Bulan Bunga 25%"
+        RadioButton3.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton2
+        ' 
+        RadioButton2.AutoSize = True
+        RadioButton2.Location = New Point(7, 83)
+        RadioButton2.Margin = New Padding(3, 4, 3, 4)
+        RadioButton2.Name = "RadioButton2"
+        RadioButton2.Size = New Size(289, 35)
+        RadioButton2.TabIndex = 4
+        RadioButton2.TabStop = True
+        RadioButton2.Text = "6 Bulan Bunga 20%"
+        RadioButton2.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton1
+        ' 
+        RadioButton1.AutoSize = True
+        RadioButton1.Location = New Point(7, 37)
+        RadioButton1.Margin = New Padding(3, 4, 3, 4)
+        RadioButton1.Name = "RadioButton1"
+        RadioButton1.Size = New Size(289, 35)
+        RadioButton1.TabIndex = 3
+        RadioButton1.TabStop = True
+        RadioButton1.Text = "3 Bulan Bunga 15%"
+        RadioButton1.UseVisualStyleBackColor = True
         ' 
         ' BtnAjukan
         ' 
@@ -159,9 +199,10 @@ Partial Class AjukanPijaman
         BtnAjukan.FlatStyle = FlatStyle.Flat
         BtnAjukan.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnAjukan.ForeColor = SystemColors.ControlLightLight
-        BtnAjukan.Location = New Point(104, 286)
+        BtnAjukan.Location = New Point(119, 381)
+        BtnAjukan.Margin = New Padding(3, 4, 3, 4)
         BtnAjukan.Name = "BtnAjukan"
-        BtnAjukan.Size = New Size(189, 60)
+        BtnAjukan.Size = New Size(216, 80)
         BtnAjukan.TabIndex = 29
         BtnAjukan.Text = "Ajukan"
         BtnAjukan.UseVisualStyleBackColor = False
@@ -177,9 +218,10 @@ Partial Class AjukanPijaman
         BtnBatal.FlatStyle = FlatStyle.Flat
         BtnBatal.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnBatal.ForeColor = SystemColors.ControlLightLight
-        BtnBatal.Location = New Point(104, 358)
+        BtnBatal.Location = New Point(119, 477)
+        BtnBatal.Margin = New Padding(3, 4, 3, 4)
         BtnBatal.Name = "BtnBatal"
-        BtnBatal.Size = New Size(189, 60)
+        BtnBatal.Size = New Size(216, 80)
         BtnBatal.TabIndex = 30
         BtnBatal.Text = "Batalkan"
         BtnBatal.UseVisualStyleBackColor = False
@@ -188,11 +230,11 @@ Partial Class AjukanPijaman
         ' 
         Label7.AutoSize = True
         Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Microsoft Sans Serif", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.SaddleBrown
-        Label7.Location = New Point(288, 127)
+        Label7.Location = New Point(329, 169)
         Label7.Name = "Label7"
-        Label7.Size = New Size(20, 29)
+        Label7.Size = New Size(24, 36)
         Label7.TabIndex = 31
         Label7.Text = ":"
         ' 
@@ -200,11 +242,11 @@ Partial Class AjukanPijaman
         ' 
         Label8.AutoSize = True
         Label8.BackColor = Color.Transparent
-        Label8.Font = New Font("Microsoft Sans Serif", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label8.ForeColor = Color.SaddleBrown
-        Label8.Location = New Point(288, 161)
+        Label8.Location = New Point(329, 215)
         Label8.Name = "Label8"
-        Label8.Size = New Size(20, 29)
+        Label8.Size = New Size(24, 36)
         Label8.TabIndex = 32
         Label8.Text = ":"
         ' 
@@ -212,11 +254,11 @@ Partial Class AjukanPijaman
         ' 
         Label9.AutoSize = True
         Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Microsoft Sans Serif", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label9.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.SaddleBrown
-        Label9.Location = New Point(288, 199)
+        Label9.Location = New Point(329, 265)
         Label9.Name = "Label9"
-        Label9.Size = New Size(20, 29)
+        Label9.Size = New Size(24, 36)
         Label9.TabIndex = 33
         Label9.Text = ":"
         ' 
@@ -224,72 +266,39 @@ Partial Class AjukanPijaman
         ' 
         Label10.AutoSize = True
         Label10.BackColor = Color.Transparent
-        Label10.Font = New Font("Microsoft Sans Serif", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.ForeColor = Color.SaddleBrown
-        Label10.Location = New Point(288, 236)
+        Label10.Location = New Point(329, 315)
         Label10.Name = "Label10"
-        Label10.Size = New Size(20, 29)
+        Label10.Size = New Size(24, 36)
         Label10.TabIndex = 34
         Label10.Text = ":"
         ' 
         ' lbNama_pengajuan
         ' 
         lbNama_pengajuan.AutoSize = True
-        lbNama_pengajuan.Location = New Point(314, 138)
+        lbNama_pengajuan.Location = New Point(359, 184)
         lbNama_pengajuan.Name = "lbNama_pengajuan"
-        lbNama_pengajuan.Size = New Size(47, 15)
+        lbNama_pengajuan.Size = New Size(61, 20)
         lbNama_pengajuan.TabIndex = 35
         lbNama_pengajuan.Text = "Label11"
         ' 
         ' lbNomor
         ' 
         lbNomor.AutoSize = True
-        lbNomor.Location = New Point(316, 172)
+        lbNomor.Location = New Point(361, 229)
         lbNomor.Name = "lbNomor"
-        lbNomor.Size = New Size(45, 15)
+        lbNomor.Size = New Size(56, 20)
         lbNomor.TabIndex = 36
         lbNomor.Text = "Nomor"
         ' 
-        ' RadioButton1
-        ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(6, 28)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(237, 29)
-        RadioButton1.TabIndex = 3
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "3 Bulan Bunga 15%"
-        RadioButton1.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton2
-        ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(6, 62)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(237, 29)
-        RadioButton2.TabIndex = 4
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "6 Bulan Bunga 20%"
-        RadioButton2.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton3
-        ' 
-        RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(6, 93)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(250, 29)
-        RadioButton3.TabIndex = 5
-        RadioButton3.TabStop = True
-        RadioButton3.Text = "12 Bulan Bunga 25%"
-        RadioButton3.UseVisualStyleBackColor = True
-        ' 
         ' AjukanPijaman
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Zoom
-        ClientSize = New Size(763, 494)
+        ClientSize = New Size(872, 659)
         Controls.Add(lbNomor)
         Controls.Add(lbNama_pengajuan)
         Controls.Add(Label10)
@@ -308,6 +317,7 @@ Partial Class AjukanPijaman
         Controls.Add(Label2)
         Controls.Add(Label1)
         DoubleBuffered = True
+        Margin = New Padding(3, 4, 3, 4)
         Name = "AjukanPijaman"
         Text = "AjukanPeminjaman"
         gbCicilan.ResumeLayout(False)

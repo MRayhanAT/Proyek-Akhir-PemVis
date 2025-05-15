@@ -2,7 +2,7 @@ Imports MySql.Data.MySqlClient
 
 Public Class DaftarAkun
     Private Sub BtnDaftar_Click(sender As Object, e As EventArgs) Handles BtnDaftar.Click
-        If PeriksaKosong() Then
+        If Not PeriksaKosong() Then
             MessageBox.Show("inputan harus valid", "WARNING",
             MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Else

@@ -25,5 +25,8 @@
     <Compile Update="Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Riwayat.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
