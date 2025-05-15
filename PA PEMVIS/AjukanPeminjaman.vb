@@ -11,9 +11,6 @@ Public Class AjukanPijaman
         Try
 
             Module1.koneksi()
-
-
-
             Dim Cicilan As String = ""
 
             For Each ctrl As Control In gbCicilan.Controls
@@ -50,16 +47,12 @@ Public Class AjukanPijaman
             If Module1.CONN.State = ConnectionState.Open Then
                 Module1.CONN.Close()
             End If
-
         End Try
-    End Sub
-
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
-
     End Sub
 
     Private Sub BtnBatal_Click(sender As Object, e As EventArgs) Handles BtnBatal.Click
         Me.Hide()
         HomeUser.Show()
     End Sub
+
 End Class
