@@ -33,7 +33,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.PA_PEMVIS.FMenu
+            Me.MainForm = Global.PA_PEMVIS.DaftarAkun
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
