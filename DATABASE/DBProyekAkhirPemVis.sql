@@ -11,12 +11,12 @@ Create table tbUsers (
 );
 
 Create table Pinjaman (
-	idPinjaman int primary key,
+	idPinjaman int primary key auto_increment,
     Nama varchar(50),
     Alamat varchar(100),
     Nominal int,
     cicilan varchar(50),
-    tanggalACCEPT date,
+    tanggalACCEPT DATE DEFAULT '1000-01-01',
     status varchar(50) default "pending", 
     NomorHP_Pengguna bigint,
     FOREIGN KEY (NomorHP_Pengguna) REFERENCES tbUsers(NomorHP)
