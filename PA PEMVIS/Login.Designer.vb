@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Login
     Inherits System.Windows.Forms.Form
 
@@ -39,9 +39,9 @@ Partial Class Login
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(719, 609)
+        Label1.Location = New Point(629, 457)
         Label1.Name = "Label1"
-        Label1.Size = New Size(172, 42)
+        Label1.Size = New Size(134, 33)
         Label1.TabIndex = 14
         Label1.Text = "SihCepat"
         ' 
@@ -53,10 +53,9 @@ Partial Class Login
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = Color.Transparent
-        Button1.Location = New Point(11, 8)
-        Button1.Margin = New Padding(3, 4, 3, 4)
+        Button1.Location = New Point(10, 6)
         Button1.Name = "Button1"
-        Button1.Size = New Size(56, 58)
+        Button1.Size = New Size(49, 44)
         Button1.TabIndex = 13
         Button1.UseVisualStyleBackColor = False
         ' 
@@ -68,10 +67,9 @@ Partial Class Login
         BtnLogin.FlatStyle = FlatStyle.Flat
         BtnLogin.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnLogin.ForeColor = Color.White
-        BtnLogin.Location = New Point(375, 398)
-        BtnLogin.Margin = New Padding(3, 4, 3, 4)
+        BtnLogin.Location = New Point(328, 298)
         BtnLogin.Name = "BtnLogin"
-        BtnLogin.Size = New Size(366, 47)
+        BtnLogin.Size = New Size(320, 35)
         BtnLogin.TabIndex = 17
         BtnLogin.Text = "Login"
         BtnLogin.UseVisualStyleBackColor = False
@@ -81,11 +79,10 @@ Partial Class Login
         txtUsername.Cursor = Cursors.IBeam
         txtUsername.Font = New Font("Microsoft Sans Serif", 12.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtUsername.ForeColor = Color.DarkGray
-        txtUsername.Location = New Point(375, 249)
-        txtUsername.Margin = New Padding(3, 4, 3, 4)
+        txtUsername.Location = New Point(328, 187)
         txtUsername.Multiline = True
         txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(365, 37)
+        txtUsername.Size = New Size(320, 29)
         txtUsername.TabIndex = 16
         ' 
         ' txtPassword
@@ -93,12 +90,11 @@ Partial Class Login
         txtPassword.Cursor = Cursors.IBeam
         txtPassword.Font = New Font("Microsoft Sans Serif", 12.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtPassword.ForeColor = Color.DarkGray
-        txtPassword.Location = New Point(375, 335)
-        txtPassword.Margin = New Padding(3, 4, 3, 4)
+        txtPassword.Location = New Point(328, 251)
         txtPassword.Multiline = True
         txtPassword.Name = "txtPassword"
         txtPassword.PasswordChar = "*"c
-        txtPassword.Size = New Size(365, 37)
+        txtPassword.Size = New Size(320, 29)
         txtPassword.TabIndex = 15
         ' 
         ' Label2
@@ -107,11 +103,11 @@ Partial Class Login
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.SaddleBrown
-        Label2.Location = New Point(375, 216)
+        Label2.Location = New Point(328, 162)
         Label2.Name = "Label2"
-        Label2.Size = New Size(132, 29)
+        Label2.Size = New Size(107, 24)
         Label2.TabIndex = 18
-        Label2.Text = "Username"
+        Label2.Text = "Nomor HP"
         ' 
         ' Label3
         ' 
@@ -119,9 +115,9 @@ Partial Class Login
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.SaddleBrown
-        Label3.Location = New Point(375, 302)
+        Label3.Location = New Point(328, 226)
         Label3.Name = "Label3"
-        Label3.Size = New Size(128, 29)
+        Label3.Size = New Size(100, 24)
         Label3.TabIndex = 19
         Label3.Text = "Password"
         ' 
@@ -132,19 +128,20 @@ Partial Class Login
         LihatPass.BackgroundImageLayout = ImageLayout.Zoom
         LihatPass.FlatAppearance.BorderSize = 0
         LihatPass.FlatStyle = FlatStyle.Flat
-        LihatPass.Location = New Point(705, 340)
+        LihatPass.Location = New Point(617, 255)
+        LihatPass.Margin = New Padding(3, 2, 3, 2)
         LihatPass.Name = "LihatPass"
-        LihatPass.Size = New Size(28, 28)
+        LihatPass.Size = New Size(24, 21)
         LihatPass.TabIndex = 21
         LihatPass.UseVisualStyleBackColor = False
         ' 
         ' Login
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Zoom
-        ClientSize = New Size(872, 659)
+        ClientSize = New Size(763, 494)
         Controls.Add(LihatPass)
         Controls.Add(Label3)
         Controls.Add(Label2)
@@ -154,7 +151,6 @@ Partial Class Login
         Controls.Add(Label1)
         Controls.Add(Button1)
         DoubleBuffered = True
-        Margin = New Padding(3, 4, 3, 4)
         Name = "Login"
         Text = "Login"
         ResumeLayout(False)
