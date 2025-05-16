@@ -7,7 +7,7 @@ Public Class Riwayat
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
         TampilkanRiwayat()
     End Sub
-    
+
     Sub TampilkanRiwayat()
         Try
             DataGridView1.Columns.Clear()
