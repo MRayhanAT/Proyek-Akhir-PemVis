@@ -1,7 +1,24 @@
 Imports MySql.Data.MySqlClient
+Imports System.CodeDom
 Imports System.Text
 
 Public Class DaftarPeminjaman
+    Dim x, y As Integer
+    Dim newpoint As New System.Drawing.Point
+
+    Private Sub form_input_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
+        x = Control.MousePosition.X - Me.Location.X
+        y = Control.MousePosition.Y - Me.Location.Y
+    End Sub
+
+    Private Sub form_input_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
+        If e.Button = DaftarPeminjaman.MouseButtons.Left Then
+            newpoint = Control.MousePosition
+            newpoint.X -= (x)
+            newpoint.Y -= (y)
+            Me.Location = newpoint
+        End If
+    End Sub
 
     Private Sub DaftarPeminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
@@ -45,7 +62,10 @@ Public Class DaftarPeminjaman
                 .Columns("Cicilan").HeaderText = "Cicilan"
                 .Columns("NomorHP_Pengguna").HeaderText = "Nomor HP"
                 .Columns("Status").HeaderText = "Status Peminjaman"
+                .Columns("tanggalACCEPT").HeaderText = "Terakhir Diupdate"
                 .Columns("idPinjaman").Width = 70
+                .Columns("tanggalACCEPT").Width = 150
+                .Columns("tanggalACCEPT").DefaultCellStyle.Format = "dd/MM/yyyy"
             End With
 
         Catch ex As Exception
@@ -66,10 +86,12 @@ Public Class DaftarPeminjaman
                 Dim row As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
                 Dim idPinjaman As Integer = Convert.ToInt32(row.Cells("idPinjaman").Value)
                 Dim statusBaru As String = row.Cells("Status").Value.ToString()
+                Dim tanggalUpdate As DateTime = DateTime.Now
 
-                Dim query As String = "UPDATE Pinjaman SET Status = @status WHERE idPinjaman = @id"
+                Dim query As String = "UPDATE Pinjaman SET Status = @status, tanggalACCEPT = @tanggal WHERE idPinjaman = @id"
                 Dim cmd As New MySqlCommand(query, Module1.CONN)
                 cmd.Parameters.AddWithValue("@status", statusBaru)
+                cmd.Parameters.AddWithValue("@tanggal", tanggalUpdate)
                 cmd.Parameters.AddWithValue("@id", idPinjaman)
                 cmd.ExecuteNonQuery()
 
@@ -141,6 +163,10 @@ Public Class DaftarPeminjaman
         e.Graphics.FillRectangle(New SolidBrush(backColor), e.Bounds)
         TextRenderer.DrawText(e.Graphics, cmb.Items(e.Index).ToString(), cmb.Font, e.Bounds, foreColor)
         e.DrawFocusRectangle()
+    End Sub
+
+    Private Sub FormDaftarPinjaman_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
+        TampilkanData_peminjaman()
     End Sub
 
 End Class
