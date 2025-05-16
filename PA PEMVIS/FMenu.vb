@@ -1,4 +1,4 @@
-Imports System.Text
+﻿Imports System.Text
 Imports MySql.Data.MySqlClient
 
 Public Module Module1
@@ -42,6 +42,23 @@ Public Module Module1
 End Module
 
 Public Class FMenu
+    Dim x, y As Integer
+    Dim newpoint As New System.Drawing.Point
+
+    Private Sub form_input_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
+        x = Control.MousePosition.X - Me.Location.X
+        y = Control.MousePosition.Y - Me.Location.Y
+    End Sub
+
+    Private Sub form_input_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
+        If e.Button = FMenu.MouseButtons.Left Then
+            newpoint = Control.MousePosition
+            newpoint.X -= (x)
+            newpoint.Y -= (y)
+            Me.Location = newpoint
+        End If
+    End Sub
+
     Private Sub BtnDaftar_Click(sender As Object, e As EventArgs) Handles BtnDaftar.Click
         DaftarAkun.Show()
         Me.Hide()
@@ -54,5 +71,9 @@ Public Class FMenu
 
     Private Sub FMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
+    End Sub
+
+    Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
+        Application.Exit()
     End Sub
 End Class

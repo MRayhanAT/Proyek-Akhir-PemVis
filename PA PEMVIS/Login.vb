@@ -1,4 +1,4 @@
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports MySql.Data.MySqlClient
 
 Public Class Login
@@ -63,7 +63,7 @@ Public Class Login
         txtPassword.Text = ""
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnKembali.Click
         Me.Hide()
         FMenu.Show()
     End Sub
@@ -94,16 +94,16 @@ Public Class Login
     Private Sub LihatPass_Click(sender As Object, e As EventArgs) Handles LihatPass.Click
         If txtPassword.PasswordChar = "*" Then
             txtPassword.PasswordChar = ""
-            LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul_13
+            LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul__13_
         Else
             txtPassword.PasswordChar = "*"
-            LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul_11
+            LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul__11_
         End If
     End Sub
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtPassword.PasswordChar = "*"
-        LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul_11
+        LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul__11_
         GlobalVariables.AkunAdmin(0, 0) = "63"
         GlobalVariables.AkunAdmin(0, 1) = "daffa"
         GlobalVariables.AkunAdmin(1, 0) = "59"
@@ -114,6 +114,6 @@ Public Class Login
 
     Private Sub Login_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         txtPassword.PasswordChar = "*"
-        LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul_11
+        LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul__11_
     End Sub
 End Class

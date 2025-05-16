@@ -1,68 +1,7 @@
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports MySql.Data.MySqlClient
 
 Public Class HomeUser
-
-    'Private Sub LoadToDoList()
-    '    Try
-    '        Module1.koneksi()
-
-    '        Module1.STR = "SELECT COUNT(*) FROM Catatan"
-    '        Module1.CMD = New MySqlCommand(Module1.STR, Module1.CONN)
-    '        Dim jumlah As Integer = Convert.ToInt32(Module1.CMD.ExecuteScalar())
-    '        If jumlah > 0 Then
-    '            Module1.STR = "SELECT * FROM Catatan WHERE nomorHP = @noHP"
-    '            Module1.CMD = New MySqlCommand(Module1.STR, Module1.CONN)
-    '            Module1.CMD.Parameters.AddWithValue("@noHP", GlobalVariables.Username)
-    '            Dim reader As MySqlDataReader = Module1.CMD.ExecuteReader()
-    '            Dim tugas As String
-    '            While reader.Read()
-    '                tugas = reader("Tugas").ToString()
-    '                Todolistbox.Items.Add(tugas)
-    '            End While
-    '            reader.Close()
-    '        End If
-    '    Catch ex As Exception
-    '        MessageBox.Show("Terjadi kesalahan: " & ex.Message)
-    '    End Try
-    'End Sub
-
-
-    'Private Sub LoadToDoList()
-    '    Try
-    '        Module1.koneksi()
-
-    '        Module1.STR = "SELECT COUNT(*) FROM Catatan WHERE nomorHP = @noHP"
-    '        Module1.CMD = New MySqlCommand(Module1.STR, Module1.CONN)
-    '        Module1.CMD.Parameters.AddWithValue("@noHP", GlobalVariables.nomor_hp_user)
-    '        Dim jumlah As Integer = Convert.ToInt32(Module1.CMD.ExecuteScalar())
-
-    '        If jumlah > 0 Then
-
-    '            Module1.STR = "SELECT idCatatan, catatan FROM Catatan WHERE nomorHP = @noHP"
-    '            Module1.CMD = New MySqlCommand(Module1.STR, Module1.CONN)
-    '            Module1.CMD.Parameters.AddWithValue("@noHP", GlobalVariables.nomor_hp_user)
-    '            Dim reader As MySqlDataReader = Module1.CMD.ExecuteReader()
-
-
-    '            Todolistbox.Items.Clear()
-
-    '            While reader.Read()
-    '                Dim tugas As String = reader("catatan").ToString()
-    '                Todolistbox.Items.Add(tugas)
-    '            End While
-    '            reader.Close()
-    '        End If
-
-    '    Catch ex As Exception
-    '        MessageBox.Show("Terjadi kesalahan saat memuat daftar catatan: " & ex.Message)
-    '    Finally
-    '        If Module1.CONN.State = ConnectionState.Open Then
-    '            Module1.CONN.Close()
-    '        End If
-    '    End Try
-    'End Sub
-
     Private Sub LoadToDoList()
         Try
             Module1.koneksi()
@@ -252,7 +191,7 @@ Public Class HomeUser
     End Function
 
     Private Sub HomeUser_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        UserName.Text = GlobalVariables.Username
+        LbNama.Text = GlobalVariables.Username
         Todolistbox.Items.Clear()
         LoadToDoList()
     End Sub

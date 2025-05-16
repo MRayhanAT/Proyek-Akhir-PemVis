@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\PA PEMVIS.vbproj": {}
+    "D:\\Tugas Kuliah\\PEMVIS\\PA PEMVIS\\PA PEMVIS\\PA PEMVIS.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\PA PEMVIS.vbproj": {
+    "D:\\Tugas Kuliah\\PEMVIS\\PA PEMVIS\\PA PEMVIS\\PA PEMVIS.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\PA PEMVIS.vbproj",
+        "projectUniqueName": "D:\\Tugas Kuliah\\PEMVIS\\PA PEMVIS\\PA PEMVIS\\PA PEMVIS.vbproj",
         "projectName": "PA PEMVIS",
-        "projectPath": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\PA PEMVIS.vbproj",
-        "packagesPath": "C:\\Users\\Asus TUF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus TUF\\Documents\\Kuliah\\SMT 4\\Praktikum\\Programan Visual\\Proyek Akhir\\PA PEMVIS\\obj\\",
+        "projectPath": "D:\\Tugas Kuliah\\PEMVIS\\PA PEMVIS\\PA PEMVIS\\PA PEMVIS.vbproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\Tugas Kuliah\\PEMVIS\\PA PEMVIS\\PA PEMVIS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus TUF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
