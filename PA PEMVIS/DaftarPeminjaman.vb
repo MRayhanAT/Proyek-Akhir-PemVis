@@ -3,31 +3,29 @@ Imports System.CodeDom
 Imports System.Text
 
 Public Class DaftarPeminjaman
-<<<<<<< HEAD
-=======
-    Dim x, y As Integer
-    Dim newpoint As New System.Drawing.Point
 
-    Private Sub form_input_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
-        x = Control.MousePosition.X - Me.Location.X
-        y = Control.MousePosition.Y - Me.Location.Y
-    End Sub
+    'Dim x, y As Integer
+    'Dim newpoint As New System.Drawing.Point
 
-    Private Sub form_input_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
-        If e.Button = DaftarPeminjaman.MouseButtons.Left Then
-            newpoint = Control.MousePosition
-            newpoint.X -= (x)
-            newpoint.Y -= (y)
-            Me.Location = newpoint
-        End If
-    End Sub
+    'Private Sub form_input_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
+    '    x = Control.MousePosition.X - Me.Location.X
+    '    y = Control.MousePosition.Y - Me.Location.Y
+    'End Sub
 
-    Private Sub DaftarPeminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
-        TampilkanData_peminjaman()
-    End Sub
+    'Private Sub form_input_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
+    '    If e.Button = DaftarPeminjaman.MouseButtons.Left Then
+    '        newpoint = Control.MousePosition
+    '        newpoint.X -= (x)
+    '        newpoint.Y -= (y)
+    '        Me.Location = newpoint
+    '    End If
+    'End Sub
 
->>>>>>> 7be9c40cf465aad4b5c8c8be3abf1f1c631ec939
+    'Private Sub DaftarPeminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    '    Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
+    '    TampilkanData_peminjaman()
+    'End Sub
+
     Sub TampilkanData_peminjaman()
         Try
             DataGridView1.Columns.Clear()
@@ -91,11 +89,7 @@ Public Class DaftarPeminjaman
                 Dim statusBaru As String = row.Cells("Status").Value.ToString()
                 Dim tanggalUpdate As DateTime = DateTime.Now
 
-<<<<<<< HEAD
-                Dim query As String = "UPDATE Pinjaman SET Status = @status, AdminAccept = @admin WHERE idPinjaman = @id"
-=======
-                Dim query As String = "UPDATE Pinjaman SET Status = @status, tanggalACCEPT = @tanggal WHERE idPinjaman = @id"
->>>>>>> 7be9c40cf465aad4b5c8c8be3abf1f1c631ec939
+                Dim query As String = "UPDATE Pinjaman SET Status = @status, AdminAccept = @admin, tanggalACCEPT = @tanggal WHERE idPinjaman = @id"
                 Dim cmd As New MySqlCommand(query, Module1.CONN)
                 cmd.Parameters.AddWithValue("@status", statusBaru)
                 cmd.Parameters.AddWithValue("@tanggal", tanggalUpdate)
@@ -173,15 +167,8 @@ Public Class DaftarPeminjaman
         e.DrawFocusRectangle()
     End Sub
 
-<<<<<<< HEAD
     Private Sub DaftarPeminjaman_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
         TampilkanData_peminjaman()
     End Sub
-=======
-    Private Sub FormDaftarPinjaman_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
-        TampilkanData_peminjaman()
-    End Sub
-
->>>>>>> 7be9c40cf465aad4b5c8c8be3abf1f1c631ec939
 End Class

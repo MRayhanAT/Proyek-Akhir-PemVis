@@ -26,12 +26,15 @@ Create table Pinjaman (
 Create table Catatan (
 	idCatatan INT AUTO_INCREMENT PRIMARY KEY,
     catatan varchar(50),
+    ceklist boolean default false,
     nomorHP bigint,
     FOREIGN KEY (nomorHP) REFERENCES tbUsers(NomorHP)
 );
 
 select * from tbUsers;
 select * from Pinjaman;
+select * from Catatan;
+SELECT idCatatan, catatan FROM Catatan WHERE nomorHP = 8310;
 
 INSERT INTO tbUsers (NomorHP, username, password, KTP, statusPinjaman)
 VALUES (6281234567890, 'budi123', 'rahasia123', '3578012345678901', 'tidak ada pinjaman');

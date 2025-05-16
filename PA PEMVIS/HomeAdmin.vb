@@ -17,8 +17,8 @@ Public Class HomeAdmin
             Dim query As String = "SELECT 
                                     (SELECT COUNT(*) FROM tbUsers) AS TotalUser,
                                     (SELECT COUNT(*) FROM Pinjaman) AS TotalPeminjaman,
-                                    (SELECT COUNT(*) FROM Pinjaman WHERE Status = 'Pengajuan Diterima') AS PinjamanDiterima,
-                                    (SELECT COUNT(*) FROM Pinjaman WHERE Status = 'Pengajuan Ditolak') AS PinjamanDitolak"
+                                    (SELECT COUNT(*) FROM Pinjaman WHERE Status = 'Diterima') AS PinjamanDiterima,
+                                    (SELECT COUNT(*) FROM Pinjaman WHERE Status = 'Ditolak') AS PinjamanDitolak"
 
             Dim cmd As New MySqlCommand(query, Module1.CONN)
             reader = cmd.ExecuteReader()
