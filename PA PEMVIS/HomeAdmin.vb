@@ -3,9 +3,10 @@ Imports MySql.Data.MySqlClient
 Public Class HomeAdmin
     Private CONN As MySqlConnection
 
-    Private Sub HomeAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TampilkanTotal()
-    End Sub
+    'Private Sub HomeAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    '    TampilkanTotal()
+    'End Sub
+
 
     Private Sub TampilkanTotal()
         Dim reader As MySqlDataReader = Nothing

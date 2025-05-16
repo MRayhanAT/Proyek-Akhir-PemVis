@@ -5,19 +5,22 @@ Public Class Login
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         If PeriksaKosongFormLogin() Then
             Try
-                If txtUsername.Text = 63 And txtPassword.Text = "daffa" Then
+                If GlobalVariables.AkunAdmin(0, 0) = CStr(63) And txtPassword.Text = "daffa" Then
                     MessageBox.Show("Login berhasil! Selamat datang, Admin")
                     Me.Hide()
+                    GlobalVariables.Admin = txtUsername.Text
                     HomeAdmin.Show()
                     KosongkanForm()
-                ElseIf txtUsername.Text = 59 And txtPassword.Text = "ayya" Then
+                ElseIf GlobalVariables.AkunAdmin(1, 0) = CStr(59) And txtPassword.Text = "ayya" Then
                     MessageBox.Show("Login berhasil! Selamat datang, Admin")
                     Me.Hide()
+                    GlobalVariables.Admin = txtUsername.Text
                     HomeAdmin.Show()
                     KosongkanForm()
-                ElseIf txtUsername.Text = 50 And txtPassword.Text = "rehan" Then
+                ElseIf GlobalVariables.AkunAdmin(2, 0) = CStr(50) And txtPassword.Text = "rehan" Then
                     MessageBox.Show("Login berhasil! Selamat datang, Admin")
                     Me.Hide()
+                    GlobalVariables.Admin = txtUsername.Text
                     HomeAdmin.Show()
                     KosongkanForm()
                 Else
@@ -40,7 +43,6 @@ Public Class Login
                     Else
                         MessageBox.Show("Login gagal. Username atau password salah.")
                     End If
-
                     Module1.RD.Close()
                 End If
 

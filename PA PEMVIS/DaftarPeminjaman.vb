@@ -2,12 +2,6 @@ Imports MySql.Data.MySqlClient
 Imports System.Text
 
 Public Class DaftarPeminjaman
-
-    Private Sub DaftarPeminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
-        TampilkanData_peminjaman()
-    End Sub
-
     Sub TampilkanData_peminjaman()
         Try
             DataGridView1.Columns.Clear()
@@ -67,15 +61,16 @@ Public Class DaftarPeminjaman
                 Dim idPinjaman As Integer = Convert.ToInt32(row.Cells("idPinjaman").Value)
                 Dim statusBaru As String = row.Cells("Status").Value.ToString()
 
-                Dim query As String = "UPDATE Pinjaman SET Status = @status WHERE idPinjaman = @id"
+                Dim query As String = "UPDATE Pinjaman SET Status = @status, AdminAccept = @admin WHERE idPinjaman = @id"
                 Dim cmd As New MySqlCommand(query, Module1.CONN)
                 cmd.Parameters.AddWithValue("@status", statusBaru)
                 cmd.Parameters.AddWithValue("@id", idPinjaman)
+                cmd.Parameters.AddWithValue("@admin", GlobalVariables.Admin)
                 cmd.ExecuteNonQuery()
-
             Catch ex As Exception
                 MessageBox.Show("Gagal mengupdate status: " & ex.Message)
             Finally
+                TampilkanData_peminjaman()
                 If Module1.CONN.State = ConnectionState.Open Then
                     Module1.CONN.Close()
                 End If
@@ -143,4 +138,8 @@ Public Class DaftarPeminjaman
         e.DrawFocusRectangle()
     End Sub
 
+    Private Sub DaftarPeminjaman_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
+        TampilkanData_peminjaman()
+    End Sub
 End Class
