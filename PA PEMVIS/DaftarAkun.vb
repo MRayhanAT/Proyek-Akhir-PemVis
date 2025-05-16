@@ -1,6 +1,16 @@
+Imports System.Text
 Imports MySql.Data.MySqlClient
 
 Public Class DaftarAkun
+
+    Private Sub DaftarAkun_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
+        txtUsername.Text = " Masukkan Username"
+        txtPassword.Text = "Masukkan Password"
+        TextBox3.Text = " Masukkan Nomor HP"
+        PictureBox1.BackgroundImage = Nothing
+    End Sub
+
     Private Sub BtnDaftar_Click(sender As Object, e As EventArgs) Handles BtnDaftar.Click
         If Not PeriksaKosong() Then
             MessageBox.Show("inputan harus valid", "WARNING",
@@ -31,7 +41,7 @@ Public Class DaftarAkun
                     If result > 0 Then
                         MessageBox.Show("Registrasi berhasil! Silakan login.")
                         Me.Hide()
-                        HomeUser.Show()
+                        FMenu.Show()
                     Else
                         MessageBox.Show("Registrasi gagal.")
                     End If
