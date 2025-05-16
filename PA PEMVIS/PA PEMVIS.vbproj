@@ -21,7 +21,16 @@
 
   <ItemGroup>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\Latihan\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+      <HintPath>C:\Users\ASUS\Downloads\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>C:\Users\ASUS\Downloads\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.VisualStudio">
+      <HintPath>C:\Users\ASUS\Downloads\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.visualstudio.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>C:\Users\ASUS\Downloads\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.web.dll</HintPath>
     </Reference>
   </ItemGroup>
 

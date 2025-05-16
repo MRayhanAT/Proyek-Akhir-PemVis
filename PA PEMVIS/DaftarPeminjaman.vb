@@ -1,30 +1,31 @@
-Imports MySql.Data.MySqlClient
+﻿Imports MySql.Data.MySqlClient
 Imports System.CodeDom
+Imports System.Drawing.Printing
 Imports System.Text
 
 Public Class DaftarPeminjaman
 
-    'Dim x, y As Integer
-    'Dim newpoint As New System.Drawing.Point
+    Dim x, y As Integer
+    Dim newpoint As New System.Drawing.Point
 
-    'Private Sub form_input_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
-    '    x = Control.MousePosition.X - Me.Location.X
-    '    y = Control.MousePosition.Y - Me.Location.Y
-    'End Sub
+    Private Sub form_input_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
+        x = Control.MousePosition.X - Me.Location.X
+        y = Control.MousePosition.Y - Me.Location.Y
+    End Sub
 
-    'Private Sub form_input_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
-    '    If e.Button = DaftarPeminjaman.MouseButtons.Left Then
-    '        newpoint = Control.MousePosition
-    '        newpoint.X -= (x)
-    '        newpoint.Y -= (y)
-    '        Me.Location = newpoint
-    '    End If
-    'End Sub
+    Private Sub form_input_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
+        If e.Button = DaftarPeminjaman.MouseButtons.Left Then
+            newpoint = Control.MousePosition
+            newpoint.X -= (x)
+            newpoint.Y -= (y)
+            Me.Location = newpoint
+        End If
+    End Sub
 
-    'Private Sub DaftarPeminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    '    Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
-    '    TampilkanData_peminjaman()
-    'End Sub
+    Private Sub DaftarPeminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
+        TampilkanData_peminjaman()
+    End Sub
 
     Sub TampilkanData_peminjaman()
         Try
@@ -77,7 +78,6 @@ Public Class DaftarPeminjaman
             End If
         End Try
     End Sub
-
 
     Private Sub DataGridView1_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellValueChanged
         If e.RowIndex >= 0 AndAlso DataGridView1.Columns(e.ColumnIndex).Name = "Status" Then
@@ -166,6 +166,72 @@ Public Class DaftarPeminjaman
         TextRenderer.DrawText(e.Graphics, cmb.Items(e.Index).ToString(), cmb.Font, e.Bounds, foreColor)
         e.DrawFocusRectangle()
     End Sub
+
+    Private selectedLoan As Dictionary(Of String, String)
+
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        If e.RowIndex < 0 Then Return
+        Dim row = DataGridView1.Rows(e.RowIndex)
+        selectedLoan = New Dictionary(Of String, String) From {
+        {"Nama", row.Cells("Nama").Value.ToString()},
+        {"Alamat", row.Cells("Alamat").Value.ToString()},
+        {"Nominal", row.Cells("Nominal").Value.ToString()},
+        {"Cicilan", row.Cells("Cicilan").Value.ToString()},
+        {"No. HP", row.Cells("NomorHP_Pengguna").Value.ToString()},
+        {"Status", row.Cells("Status").Value.ToString()},
+        {"Terakhir Update", row.Cells("tanggalACCEPT").Value.ToString()},
+        {"Kontak Admin", row.Cells("AdminAccept").Value.ToString()}
+    }
+    End Sub
+
+    Private Sub BtnCetak_Click(sender As Object, e As EventArgs) Handles BtnCetak.Click
+        If selectedLoan Is Nothing Then
+            MessageBox.Show("Pilih satu baris terlebih dahulu.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Return
+        End If
+
+        Dim ukuranA4 As New PaperSize("Custom", 827, 1169)
+        PrintDocument1.DefaultPageSettings.PaperSize = ukuranA4
+        Dim pathPDF As String = IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "bukti_peminjaman.pdf")
+
+        PrintDocument1.PrinterSettings.PrinterName = "Microsoft Print to PDF"
+        PrintDocument1.PrinterSettings.PrintToFile = True
+        PrintDocument1.PrinterSettings.PrintFileName = pathPDF
+
+        Try
+            PrintDocument1.Print()
+            MessageBox.Show("Bukti peminjaman berhasil disimpan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Catch ex As Exception
+            MessageBox.Show("Gagal mencetak ke PDF: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+
+    Private Sub printDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        Dim yPos = 20
+        Dim left = 20
+        Dim fTitle = New Font("Swis721 BlkCn BT", 50, FontStyle.Bold)
+        Dim fBody = New Font("Swis721 Cn BT", 25)
+
+        e.Graphics.DrawString("BUKTI PEMINJAMAN", fTitle, Brushes.Black, e.MarginBounds.Top + 15, yPos)
+        yPos += fTitle.Height + 10
+        e.Graphics.DrawLine(Pens.Black, left, yPos, 825, yPos)
+        yPos += 10
+
+        For Each kv In selectedLoan
+            Dim line = $"
+{kv.Key,-20}: {kv.Value}"
+            e.Graphics.DrawString(line, fBody, Brushes.Black, left, yPos)
+            yPos += fBody.Height + 4
+        Next
+
+        yPos += 10
+        e.Graphics.DrawString("
+
+Note : Apabila admin kami belum menghubungi dalam
+waktu 24 jam, silahkan hubungi kontak admin tertera.", fBody, Brushes.Black, left, yPos)
+    End Sub
+
 
     Private Sub DaftarPeminjaman_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)

@@ -1,6 +1,23 @@
-Imports MySql.Data.MySqlClient
+﻿Imports MySql.Data.MySqlClient
 
 Public Class DaftarAkun
+    Dim x, y As Integer
+    Dim newpoint As New System.Drawing.Point
+
+    Private Sub form_input_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
+        x = Control.MousePosition.X - Me.Location.X
+        y = Control.MousePosition.Y - Me.Location.Y
+    End Sub
+
+    Private Sub form_input_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
+        If e.Button = DaftarAkun.MouseButtons.Left Then
+            newpoint = Control.MousePosition
+            newpoint.X -= (x)
+            newpoint.Y -= (y)
+            Me.Location = newpoint
+        End If
+    End Sub
+
     Private Sub BtnDaftar_Click(sender As Object, e As EventArgs) Handles BtnDaftar.Click
         If Not PeriksaKosong() Then
             MessageBox.Show("inputan harus valid", "WARNING",
@@ -12,7 +29,7 @@ Public Class DaftarAkun
 
                 Dim cekQuery As String = "SELECT COUNT(*) FROM tbUsers WHERE NomorHP = @no"
                 Dim cekCmd As New MySqlCommand(cekQuery, Module1.CONN)
-                cekCmd.Parameters.AddWithValue("@no", TextBox3.Text)
+                cekCmd.Parameters.AddWithValue("@no", txtNomorHP.Text)
                 Dim jumlah As Integer = Convert.ToInt32(cekCmd.ExecuteScalar())
 
                 If jumlah > 0 Then
@@ -23,7 +40,7 @@ Public Class DaftarAkun
 
                     Dim insertCmd As New MySqlCommand(insertQuery, Module1.CONN)
                     insertCmd.Parameters.AddWithValue("@uname", txtUsername.Text)
-                    insertCmd.Parameters.AddWithValue("@no", TextBox3.Text)
+                    insertCmd.Parameters.AddWithValue("@no", txtNomorHP.Text)
                     insertCmd.Parameters.AddWithValue("@ktp", PictureBox1.ImageLocation)
                     insertCmd.Parameters.AddWithValue("@pw", txtPassword.Text)
 
@@ -31,7 +48,7 @@ Public Class DaftarAkun
                     If result > 0 Then
                         MessageBox.Show("Registrasi berhasil! Silakan login.")
                         Me.Hide()
-                        HomeUser.Show()
+                        FMenu.Show()
                     Else
                         MessageBox.Show("Registrasi gagal.")
                     End If
@@ -55,7 +72,6 @@ Public Class DaftarAkun
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         SimpanGambar.Filter = "PNG Image|*.png|JPG Image|*.jpg"
         If SimpanGambar.ShowDialog() = DialogResult.OK Then
-            'PictureBox1.ImageLocation = SimpanGambar.FileName
             PictureBox1.BackgroundImage = Image.FromFile(SimpanGambar.FileName)
         End If
     End Sub
@@ -80,14 +96,14 @@ Public Class DaftarAkun
             txtPassword.Text = "Masukkan Password"
         End If
     End Sub
-    Private Sub TextBox3_Click(sender As Object, e As EventArgs) Handles TextBox3.Click
-        If TextBox3.Text = " Masukkan Nomor HP" Then
-            TextBox3.Text = ""
+    Private Sub TextBox3_Click(sender As Object, e As EventArgs) Handles txtNomorHP.Click
+        If txtNomorHP.Text = " Masukkan Nomor HP" Then
+            txtNomorHP.Text = ""
         End If
     End Sub
-    Private Sub TextBox3_Leave(sender As Object, e As EventArgs) Handles TextBox3.Leave
-        If TextBox3.Text = "" Then
-            TextBox3.Text = " Masukkan Nomor HP"
+    Private Sub TextBox3_Leave(sender As Object, e As EventArgs) Handles txtNomorHP.Leave
+        If txtNomorHP.Text = "" Then
+            txtNomorHP.Text = " Masukkan Nomor HP"
         End If
     End Sub
 
@@ -100,7 +116,7 @@ Public Class DaftarAkun
             MessageBox.Show("Password harus diisi", "WARNING",
             MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return False
-        ElseIf TextBox3.Text = "" Or TextBox3.Text = " Masukkan Nomor HP" Then
+        ElseIf txtNomorHP.Text = "" Or txtNomorHP.Text = " Masukkan Nomor HP" Then
             MessageBox.Show("No. HP harus diisi", "WARNING",
             MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return False
@@ -108,4 +124,5 @@ Public Class DaftarAkun
             Return True
         End If
     End Function
+
 End Class

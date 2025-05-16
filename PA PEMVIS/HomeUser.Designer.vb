@@ -1,4 +1,4 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class HomeUser
     Inherits System.Windows.Forms.Form
 
@@ -32,43 +32,45 @@ Partial Class HomeUser
         Label1 = New Label()
         Label3 = New Label()
         LblNamaUser = New Label()
-        UserName = New Label()
+        LbNama = New Label()
+        Label4 = New Label()
         SuspendLayout()
         ' 
         ' Todolistbox
         ' 
         Todolistbox.BackColor = Color.White
         Todolistbox.CheckOnClick = True
-        Todolistbox.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Todolistbox.Cursor = Cursors.Hand
+        Todolistbox.Font = New Font("Swis721 Cn BT", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Todolistbox.FormattingEnabled = True
         Todolistbox.Items.AddRange(New Object() {"Tagihan Lunas", "Bayar Tagihan Bulan Ke-1", "Bayar Tagihan Bulan Ke-2", "Bayar Tagihan Bulan Ke-3"})
-        Todolistbox.Location = New Point(370, 102)
-        Todolistbox.Margin = New Padding(11, 12, 11, 12)
+        Todolistbox.Location = New Point(324, 87)
+        Todolistbox.Margin = New Padding(10)
         Todolistbox.Name = "Todolistbox"
-        Todolistbox.Size = New Size(459, 204)
+        Todolistbox.Size = New Size(402, 180)
         Todolistbox.TabIndex = 15
         ' 
         ' txtList
         ' 
-        txtList.Location = New Point(370, 329)
-        txtList.Margin = New Padding(3, 4, 3, 4)
+        txtList.Cursor = Cursors.IBeam
+        txtList.Location = New Point(324, 280)
         txtList.Multiline = True
         txtList.Name = "txtList"
-        txtList.Size = New Size(459, 39)
+        txtList.Size = New Size(402, 34)
         txtList.TabIndex = 16
         ' 
         ' BtnTambah
         ' 
         BtnTambah.BackColor = Color.DarkGoldenrod
+        BtnTambah.Cursor = Cursors.Hand
         BtnTambah.FlatAppearance.BorderSize = 0
         BtnTambah.FlatAppearance.MouseOverBackColor = Color.Goldenrod
         BtnTambah.FlatStyle = FlatStyle.Flat
-        BtnTambah.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnTambah.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnTambah.ForeColor = Color.White
-        BtnTambah.Location = New Point(627, 384)
-        BtnTambah.Margin = New Padding(3, 4, 3, 4)
+        BtnTambah.Location = New Point(549, 326)
         BtnTambah.Name = "BtnTambah"
-        BtnTambah.Size = New Size(202, 42)
+        BtnTambah.Size = New Size(177, 36)
         BtnTambah.TabIndex = 18
         BtnTambah.Text = "Tambah Tugas"
         BtnTambah.UseVisualStyleBackColor = False
@@ -76,15 +78,15 @@ Partial Class HomeUser
         ' BtnAjukan
         ' 
         BtnAjukan.BackColor = Color.DarkGoldenrod
+        BtnAjukan.Cursor = Cursors.Hand
         BtnAjukan.FlatAppearance.BorderSize = 0
         BtnAjukan.FlatAppearance.MouseOverBackColor = Color.Goldenrod
         BtnAjukan.FlatStyle = FlatStyle.Flat
-        BtnAjukan.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnAjukan.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnAjukan.ForeColor = Color.White
-        BtnAjukan.Location = New Point(16, 539)
-        BtnAjukan.Margin = New Padding(3, 4, 3, 4)
+        BtnAjukan.Location = New Point(14, 458)
         BtnAjukan.Name = "BtnAjukan"
-        BtnAjukan.Size = New Size(842, 47)
+        BtnAjukan.Size = New Size(737, 40)
         BtnAjukan.TabIndex = 19
         BtnAjukan.Text = "Ajukan Pinjaman"
         BtnAjukan.UseVisualStyleBackColor = False
@@ -92,15 +94,15 @@ Partial Class HomeUser
         ' BtnRiwayat
         ' 
         BtnRiwayat.BackColor = Color.DarkGoldenrod
+        BtnRiwayat.Cursor = Cursors.Hand
         BtnRiwayat.FlatAppearance.BorderSize = 0
         BtnRiwayat.FlatAppearance.MouseOverBackColor = Color.Goldenrod
         BtnRiwayat.FlatStyle = FlatStyle.Flat
-        BtnRiwayat.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnRiwayat.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnRiwayat.ForeColor = Color.White
-        BtnRiwayat.Location = New Point(16, 475)
-        BtnRiwayat.Margin = New Padding(3, 4, 3, 4)
+        BtnRiwayat.Location = New Point(14, 404)
         BtnRiwayat.Name = "BtnRiwayat"
-        BtnRiwayat.Size = New Size(842, 47)
+        BtnRiwayat.Size = New Size(737, 40)
         BtnRiwayat.TabIndex = 20
         BtnRiwayat.Text = "Riwayat Peminjaman"
         BtnRiwayat.UseVisualStyleBackColor = False
@@ -108,15 +110,15 @@ Partial Class HomeUser
         ' BtnLogout
         ' 
         BtnLogout.BackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
+        BtnLogout.Cursor = Cursors.Hand
         BtnLogout.FlatAppearance.BorderSize = 0
         BtnLogout.FlatAppearance.MouseOverBackColor = Color.Goldenrod
         BtnLogout.FlatStyle = FlatStyle.Flat
-        BtnLogout.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnLogout.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnLogout.ForeColor = Color.White
-        BtnLogout.Location = New Point(16, 598)
-        BtnLogout.Margin = New Padding(3, 4, 3, 4)
+        BtnLogout.Location = New Point(14, 508)
         BtnLogout.Name = "BtnLogout"
-        BtnLogout.Size = New Size(842, 47)
+        BtnLogout.Size = New Size(737, 40)
         BtnLogout.TabIndex = 21
         BtnLogout.Text = "Logout"
         BtnLogout.UseVisualStyleBackColor = False
@@ -125,11 +127,11 @@ Partial Class HomeUser
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Swis721 Blk BT", 24F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.DarkGoldenrod
-        Label2.Location = New Point(370, 45)
+        Label2.Location = New Point(324, 38)
         Label2.Name = "Label2"
-        Label2.Size = New Size(203, 46)
+        Label2.Size = New Size(192, 39)
         Label2.TabIndex = 22
         Label2.Text = "To Do List"
         ' 
@@ -137,11 +139,11 @@ Partial Class HomeUser
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Swis721 BlkCn BT", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(16, 95)
+        Label1.Location = New Point(14, 81)
         Label1.Name = "Label1"
-        Label1.Size = New Size(330, 91)
+        Label1.Size = New Size(250, 77)
         Label1.TabIndex = 23
         Label1.Text = "Selamat"
         ' 
@@ -149,11 +151,11 @@ Partial Class HomeUser
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Swis721 BlkCn BT", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(16, 186)
+        Label3.Location = New Point(14, 158)
         Label3.Name = "Label3"
-        Label3.Size = New Size(317, 91)
+        Label3.Size = New Size(240, 77)
         Label3.TabIndex = 24
         Label3.Text = "Datang,"
         ' 
@@ -161,33 +163,46 @@ Partial Class HomeUser
         ' 
         LblNamaUser.AutoSize = True
         LblNamaUser.BackColor = Color.Transparent
-        LblNamaUser.Font = New Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        LblNamaUser.Font = New Font("Swis721 BlkCn BT", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         LblNamaUser.ForeColor = Color.White
-        LblNamaUser.Location = New Point(16, 276)
+        LblNamaUser.Location = New Point(14, 235)
         LblNamaUser.Name = "LblNamaUser"
-        LblNamaUser.Size = New Size(0, 91)
+        LblNamaUser.Size = New Size(0, 77)
         LblNamaUser.TabIndex = 25
         ' 
-        ' UserName
+        ' LbNama
         ' 
-        UserName.AutoSize = True
-        UserName.BackColor = Color.Transparent
-        UserName.Font = New Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        UserName.ForeColor = Color.White
-        UserName.Location = New Point(16, 276)
-        UserName.Name = "UserName"
-        UserName.Size = New Size(306, 91)
-        UserName.TabIndex = 26
-        UserName.Text = "(Nama)"
+        LbNama.AutoSize = True
+        LbNama.BackColor = Color.Transparent
+        LbNama.Font = New Font("Swis721 BlkCn BT", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        LbNama.ForeColor = Color.White
+        LbNama.Location = New Point(14, 248)
+        LbNama.Name = "LbNama"
+        LbNama.Size = New Size(228, 77)
+        LbNama.TabIndex = 26
+        LbNama.Text = "(Nama)"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.BackColor = Color.DarkGoldenrod
+        Label4.Font = New Font("Swis721 BlkCn BT", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.White
+        Label4.Location = New Point(0, 0)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(124, 35)
+        Label4.TabIndex = 27
+        Label4.Text = "SihCepat"
         ' 
         ' HomeUser
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 17F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.Solusi_Keuangan_Cepat_dan_Aman__17_
         BackgroundImageLayout = ImageLayout.Zoom
-        ClientSize = New Size(872, 659)
-        Controls.Add(UserName)
+        ClientSize = New Size(763, 560)
+        Controls.Add(Label4)
+        Controls.Add(LbNama)
         Controls.Add(LblNamaUser)
         Controls.Add(Label3)
         Controls.Add(Label1)
@@ -199,7 +214,7 @@ Partial Class HomeUser
         Controls.Add(txtList)
         Controls.Add(Todolistbox)
         DoubleBuffered = True
-        Margin = New Padding(3, 4, 3, 4)
+        FormBorderStyle = FormBorderStyle.None
         Name = "HomeUser"
         Text = "HomeUser"
         ResumeLayout(False)
@@ -215,5 +230,6 @@ Partial Class HomeUser
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents LblNamaUser As Label
-    Friend WithEvents UserName As Label
+    Friend WithEvents LbNama As Label
+    Friend WithEvents Label4 As Label
 End Class
