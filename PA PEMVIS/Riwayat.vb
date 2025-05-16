@@ -2,12 +2,12 @@ Imports MySql.Data.MySqlClient
 Imports System.Text
 
 Public Class Riwayat
-    Private Sub Riwayat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TampilkanRiwayat()
+
+    Private Sub Riwayat_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
         TampilkanRiwayat()
     End Sub
-
+    
     Sub TampilkanRiwayat()
         Try
             DataGridView1.Columns.Clear()
@@ -35,8 +35,9 @@ Public Class Riwayat
             DataGridView1.Columns("status").Width = 150
 
             Module1.koneksi()
-            Dim query As String = "SELECT * FROM Pinjaman"
+            Dim query As String = "SELECT * FROM Pinjaman WHERE NomorHP_Pengguna = @nohp"
             Dim cmd As New MySqlCommand(query, Module1.CONN)
+            cmd.Parameters.AddWithValue("@nohp", GlobalVariables.nomor_hp_user)
             Dim reader As MySqlDataReader = cmd.ExecuteReader()
 
             While reader.Read()
@@ -47,8 +48,7 @@ Public Class Riwayat
                 Dim adminACCEPT As String = reader("adminACCEPT").ToString()
                 Dim status As String = reader("status").ToString()
 
-                Dim index As Integer = DataGridView1.Rows.Add(ID_Pinjaman, Nominal, cicilan, tanggalACCEPT, adminACCEPT, status)
-
+                DataGridView1.Rows.Add(ID_Pinjaman, Nominal, cicilan, tanggalACCEPT, adminACCEPT, status)
             End While
             reader.Close()
 
