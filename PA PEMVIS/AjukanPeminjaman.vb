@@ -1,7 +1,7 @@
 Imports MySql.Data.MySqlClient
 
 Public Class AjukanPijaman
-    Private Sub Pengajuan_Pinjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Pengajuan_Pinjaman_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         lbNama_pengajuan.Text = GlobalVariables.Username
         lbNomor.Text = GlobalVariables.nomor_hp_user.ToString()
 
@@ -23,7 +23,7 @@ Public Class AjukanPijaman
                 End If
             Next
 
-            Dim insertQuery As String = "INSERT INTO pinjaman (Nama, Alamat, Nominal, cicilan, NomorHP_Pengguna) VALUES (@unamep, @al, @nom, @ci, @nop)"
+            Dim insertQuery As String = "INSERT INTO Pinjaman (Nama, Alamat, Nominal, cicilan, NomorHP_Pengguna) VALUES (@unamep, @al, @nom, @ci, @nop)"
 
             Dim insertCmd As New MySqlCommand(insertQuery, Module1.CONN)
             insertCmd.Parameters.AddWithValue("@unamep", GlobalVariables.Username)
@@ -54,5 +54,4 @@ Public Class AjukanPijaman
         Me.Hide()
         HomeUser.Show()
     End Sub
-
 End Class
